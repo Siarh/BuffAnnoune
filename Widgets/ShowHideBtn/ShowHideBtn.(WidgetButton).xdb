@@ -26,7 +26,7 @@
 				<LayerMain href="ShowHideBtnPressed.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
 			</StatePushed>
 			<ReactionOnUp>true</ReactionOnUp>
-			<Reaction>ShowHideBtnReaction</Reaction>
+			<Reaction>ShowHideBtnReaction_Duo1</Reaction>
 		</Item>
 	</Variants>
 </WidgetButton>

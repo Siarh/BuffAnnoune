@@ -23,7 +23,7 @@
 			</StateNormal>
 			<PushedOffset x="0" y="0" />
 			<ReactionOnUp>true</ReactionOnUp>
-			<Reaction>ButtonEditClick</Reaction>
+			<Reaction>ButtonEditClick_Duo1</Reaction>
 		</Item>
 	</Variants>
 </WidgetButton>

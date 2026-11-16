@@ -1,31 +1,31 @@
-Global("widgets", {})
-Global("widget", mainForm:GetChildChecked("NamePlateBar", false))
-Global("widgetdesc", widget:GetWidgetDesc())
-Global("wtControl3D", stateMainForm:GetChildChecked("MainAddonMainForm", false):GetChildChecked("MainScreenControl3D", false))
-Global("widgetsMini", {})
-Global("widgetMini", mainForm:GetChildChecked("BuffMiniBar", false))
-Global("widgetdescMini", widgetMini:GetWidgetDesc())
-Global("BuffInternal", mainForm:GetChildChecked("BuffInternal", false))
-Global("BuffDesc", BuffInternal:GetWidgetDesc())
-Global("Buff", {})
-Global("MiniBuff", mainForm:GetChildChecked("BuffMini", false))
-Global("BuffMiniDesc", MiniBuff:GetWidgetDesc())
-Global("BuffMini", {})
-Global("UnitBar", mainForm:GetChildChecked("UnitBar", false))
-Global("UnitBarDesc", UnitBar:GetWidgetDesc())
-Global("UnitButton", mainForm:GetChildChecked("UnitButton", false))
-Global("UnitButtonDesc", UnitButton:GetWidgetDesc())
-Global("UnitBars", {})
-Global("UnitButtons", {})
-Global("Names", {})
-Global("Levels", {})
-Global("Icons", {})
-Global("Backgrounds", {})
-Global("Foregrounds", {})
-Global("Bubbles", {})
+Global("widgets_Duo1", {})
+Global("widget_Duo1", mainForm:GetChildChecked("NamePlateBar", false))
+Global("widgetdesc_Duo1", widget_Duo1:GetWidgetDesc())
+Global("wtControl3D_Duo1", stateMainForm:GetChildChecked("MainAddonMainForm", false):GetChildChecked("MainScreenControl3D", false))
+Global("widgetsMini_Duo1", {})
+Global("widgetMini_Duo1", mainForm:GetChildChecked("BuffMiniBar", false))
+Global("widgetdescMini_Duo1", widgetMini_Duo1:GetWidgetDesc())
+Global("BuffInternal_Duo1", mainForm:GetChildChecked("BuffInternal", false))
+Global("BuffDesc_Duo1", BuffInternal_Duo1:GetWidgetDesc())
+Global("Buff_Duo1", {})
+Global("MiniBuff_Duo1", mainForm:GetChildChecked("BuffMini", false))
+Global("BuffMiniDesc_Duo1", MiniBuff_Duo1:GetWidgetDesc())
+Global("BuffMini_Duo1", {})
+Global("UnitBar_Duo1", mainForm:GetChildChecked("UnitBar", false))
+Global("UnitBarDesc_Duo1", UnitBar_Duo1:GetWidgetDesc())
+Global("UnitButton_Duo1", mainForm:GetChildChecked("UnitButton", false))
+Global("UnitButtonDesc_Duo1", UnitButton_Duo1:GetWidgetDesc())
+Global("UnitBars_Duo1", {})
+Global("UnitButtons_Duo1", {})
+Global("Names_Duo1", {})
+Global("Levels_Duo1", {})
+Global("Icons_Duo1", {})
+Global("Backgrounds_Duo1", {})
+Global("Foregrounds_Duo1", {})
+Global("Bubbles_Duo1", {})
 
 -- Переменные для второго окна
-Global("var_0_25b", {})
+Global("var_0_25b_Duo1", {})
 
 if not unit.IsEnemy then
 	unit.IsEnemy = object.IsEnemy
@@ -40,16 +40,16 @@ local var_0_0 = userMods.ToWString("(X_X) ")
 -- Конфигурация второго окна (если нужно будет создать полноценное второе окно)
 local var_0_24b = nil -- пока отключено, будем использовать только первое окно с двумя режимами
 
-Global("MainPanel", mainForm:GetChildChecked("MainPanel", false))
-Global("FadePanel", MainPanel:GetChildChecked("FadePanel", false))
-Global("PanelkaDND", MainPanel:GetChildChecked("PanelkaDND", false))
-Global("PanelkaText", PanelkaDND:GetChildChecked("PanelkaText", false))
-Global("ShowHideBtn", mainForm:GetChildChecked("ShowHideBtn", false))
-Global("SelectMode", mainForm:GetChildChecked("SelectMode", false))
-Global("Arrow", mainForm:GetChildChecked("Arrow", false))
-Global("ArrowText", Arrow:GetChildChecked("ArrowText", false))
+Global("MainPanel_Duo1", mainForm:GetChildChecked("MainPanel", false))
+Global("FadePanel_Duo1", MainPanel_Duo1:GetChildChecked("FadePanel", false))
+Global("PanelkaDND_Duo1", MainPanel_Duo1:GetChildChecked("PanelkaDND", false))
+Global("PanelkaText_Duo1", PanelkaDND_Duo1:GetChildChecked("PanelkaText", false))
+Global("ShowHideBtn_Duo1", mainForm:GetChildChecked("ShowHideBtn", false))
+Global("SelectMode_Duo1", mainForm:GetChildChecked("SelectMode", false))
+Global("Arrow_Duo1", mainForm:GetChildChecked("Arrow", false))
+Global("ArrowText_Duo1", Arrow_Duo1:GetChildChecked("ArrowText", false))
 
-local var_0_1 = MainPanel:GetChildChecked("Selection", false)
+local var_0_1 = MainPanel_Duo1:GetChildChecked("Selection", false)
 local var_0_2 = mainForm:GetChildChecked("Gear", false)
 local var_0_3 = mainForm:GetChildChecked("Runes", false)
 local var_0_4 = mainForm:GetChildChecked("Fairy", false)
@@ -331,32 +331,32 @@ local var_0_24 = GetConfig("config")
 local var_0_25 = {}
 local var_0_26
 
-Global("OptionsNew", mainForm:GetChildChecked("OptionsNew", false))
-Global("Header", OptionsNew:GetChildChecked("Header", false))
-Global("FabButton", OptionsNew:GetChildChecked("FabButton", false))
+Global("OptionsNew_Duo1", mainForm:GetChildChecked("OptionsNew", false))
+Global("Header_Duo1", OptionsNew_Duo1:GetChildChecked("Header", false))
+Global("FabButton_Duo1", OptionsNew_Duo1:GetChildChecked("FabButton", false))
 
 local var_0_27 = true
 
-Global("PageSelector", Header:GetChildChecked("PageSelector", false))
-Global("Pages", OptionsNew:GetChildChecked("Pages", false))
-Global("PageBuffs", Pages:GetChildChecked("PageBuffs", false))
-Global("PageMark", Pages:GetChildChecked("PageMark", false))
-Global("PageBuffsContainer", PageBuffs:GetChildChecked("Container", false))
-Global("PageBuffsItem", mainForm:GetChildChecked("PageBuffsItem", false))
-Global("PageBuffsItemDesc", PageBuffsItem:GetWidgetDesc())
-Global("PageBuffsItems", {})
-Global("PageOpts", Pages:GetChildChecked("PageOpts", false))
-Global("PageOptsContainer", PageOpts:GetChildChecked("Container", false))
-Global("OptionCheckBox", PageOpts:GetChildChecked("OptionCheckBox", false))
-Global("OptionCheckBoxDesc", OptionCheckBox:GetWidgetDesc())
-Global("OptionLabel", PageOpts:GetChildChecked("OptionLabel", false))
-Global("OptionLabelDesc", OptionLabel:GetWidgetDesc())
-Global("OptionSelector", PageOpts:GetChildChecked("OptionSelector", false))
-Global("OptionSelectorDesc", OptionSelector:GetWidgetDesc())
-Global("OptionButton", PageOpts:GetChildChecked("OptionButton", false))
-Global("OptionButtonDesc", OptionButton:GetWidgetDesc())
-Global("OptionBase", {})
-Global("FlagMark", PageMark:GetChildChecked("ItemShowMark", false):GetChildChecked("CheckBoxButton", false))
+Global("PageSelector_Duo1", Header_Duo1:GetChildChecked("PageSelector", false))
+Global("Pages_Duo1", OptionsNew_Duo1:GetChildChecked("Pages", false))
+Global("PageBuffs_Duo1", Pages_Duo1:GetChildChecked("PageBuffs", false))
+Global("PageMark_Duo1", Pages_Duo1:GetChildChecked("PageMark", false))
+Global("PageBuffsContainer_Duo1", PageBuffs_Duo1:GetChildChecked("Container", false))
+Global("PageBuffsItem_Duo1", mainForm:GetChildChecked("PageBuffsItem", false))
+Global("PageBuffsItemDesc_Duo1", PageBuffsItem_Duo1:GetWidgetDesc())
+Global("PageBuffsItems_Duo1", {})
+Global("PageOpts_Duo1", Pages_Duo1:GetChildChecked("PageOpts", false))
+Global("PageOptsContainer_Duo1", PageOpts_Duo1:GetChildChecked("Container", false))
+Global("OptionCheckBox_Duo1", PageOpts_Duo1:GetChildChecked("OptionCheckBox", false))
+Global("OptionCheckBoxDesc_Duo1", OptionCheckBox_Duo1:GetWidgetDesc())
+Global("OptionLabel_Duo1", PageOpts_Duo1:GetChildChecked("OptionLabel", false))
+Global("OptionLabelDesc_Duo1", OptionLabel_Duo1:GetWidgetDesc())
+Global("OptionSelector_Duo1", PageOpts_Duo1:GetChildChecked("OptionSelector", false))
+Global("OptionSelectorDesc_Duo1", OptionSelector_Duo1:GetWidgetDesc())
+Global("OptionButton_Duo1", PageOpts_Duo1:GetChildChecked("OptionButton", false))
+Global("OptionButtonDesc_Duo1", OptionButton_Duo1:GetWidgetDesc())
+Global("OptionBase_Duo1", {})
+Global("FlagMark_Duo1", PageMark_Duo1:GetChildChecked("ItemShowMark", false):GetChildChecked("CheckBoxButton", false))
 
 local var_0_28 = GetConfig("DataBase70")
 local var_0_29 = {}
@@ -364,17 +364,17 @@ local var_0_30 = {}
 local var_0_31 = {}
 local var_0_32 = {}
 
-Global("Target", mainForm:GetChildChecked("Target", false))
-Global("TargetDesc", Target:GetWidgetDesc())
-Global("Targets", {})
-Global("Container", PageMark:GetChildChecked("Container", false))
-Global("ContainerItem", PageMark:GetChildChecked("ContainerItem", false))
-Global("ContainerItemDesc", ContainerItem:GetWidgetDesc())
-Global("ContainerItems", {})
-Global("PreviewA", PageMark:GetChildChecked("Preview", false):GetChildChecked("PreviewA", false))
-Global("PreviewB", PageMark:GetChildChecked("Preview", false):GetChildChecked("PreviewB", false))
-Global("PreviewC", PageMark:GetChildChecked("Preview", false):GetChildChecked("PreviewC", false))
-Global("TargetsDB", {
+Global("Target_Duo1", mainForm:GetChildChecked("Target", false))
+Global("TargetDesc_Duo1", Target_Duo1:GetWidgetDesc())
+Global("Targets_Duo1", {})
+Global("Container_Duo1", PageMark_Duo1:GetChildChecked("Container", false))
+Global("ContainerItem_Duo1", PageMark_Duo1:GetChildChecked("ContainerItem", false))
+Global("ContainerItemDesc_Duo1", ContainerItem_Duo1:GetWidgetDesc())
+Global("ContainerItems_Duo1", {})
+Global("PreviewA_Duo1", PageMark_Duo1:GetChildChecked("Preview", false):GetChildChecked("PreviewA", false))
+Global("PreviewB_Duo1", PageMark_Duo1:GetChildChecked("Preview", false):GetChildChecked("PreviewB", false))
+Global("PreviewC_Duo1", PageMark_Duo1:GetChildChecked("Preview", false):GetChildChecked("PreviewC", false))
+Global("TargetsDB_Duo1", {
 	{
 		height = -1,
 		name = "Classic",
@@ -650,26 +650,26 @@ Global("TargetsDB", {
 	}
 })
 
-function SetPreview(arg_1_0)
-	PreviewA:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[arg_1_0].enemy.back))
-	PreviewA:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[arg_1_0].enemy.front))
-	PreviewA:SetBackgroundColor(TargetsDB[arg_1_0].enemy.color)
-	PreviewA:SetForegroundColor(TargetsDB[arg_1_0].enemy.color)
-	PreviewA:SetForegroundBlendEffect(TargetsDB[arg_1_0].blend)
-	PreviewB:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[arg_1_0].friend.back))
-	PreviewB:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[arg_1_0].friend.front))
-	PreviewB:SetBackgroundColor(TargetsDB[arg_1_0].friend.color)
-	PreviewB:SetForegroundColor(TargetsDB[arg_1_0].friend.color)
-	PreviewB:SetForegroundBlendEffect(TargetsDB[arg_1_0].blend)
-	PreviewC:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[arg_1_0].neutral.back))
-	PreviewC:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[arg_1_0].neutral.front))
-	PreviewC:SetBackgroundColor(TargetsDB[arg_1_0].neutral.color)
-	PreviewC:SetForegroundColor(TargetsDB[arg_1_0].neutral.color)
-	PreviewC:SetForegroundBlendEffect(TargetsDB[arg_1_0].blend)
+function SetPreview_Duo1(arg_1_0)
+	PreviewA_Duo1:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[arg_1_0].enemy.back))
+	PreviewA_Duo1:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[arg_1_0].enemy.front))
+	PreviewA_Duo1:SetBackgroundColor(TargetsDB_Duo1[arg_1_0].enemy.color)
+	PreviewA_Duo1:SetForegroundColor(TargetsDB_Duo1[arg_1_0].enemy.color)
+	PreviewA_Duo1:SetForegroundBlendEffect(TargetsDB_Duo1[arg_1_0].blend)
+	PreviewB_Duo1:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[arg_1_0].friend.back))
+	PreviewB_Duo1:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[arg_1_0].friend.front))
+	PreviewB_Duo1:SetBackgroundColor(TargetsDB_Duo1[arg_1_0].friend.color)
+	PreviewB_Duo1:SetForegroundColor(TargetsDB_Duo1[arg_1_0].friend.color)
+	PreviewB_Duo1:SetForegroundBlendEffect(TargetsDB_Duo1[arg_1_0].blend)
+	PreviewC_Duo1:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[arg_1_0].neutral.back))
+	PreviewC_Duo1:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[arg_1_0].neutral.front))
+	PreviewC_Duo1:SetBackgroundColor(TargetsDB_Duo1[arg_1_0].neutral.color)
+	PreviewC_Duo1:SetForegroundColor(TargetsDB_Duo1[arg_1_0].neutral.color)
+	PreviewC_Duo1:SetForegroundBlendEffect(TargetsDB_Duo1[arg_1_0].blend)
 end
 
-function SelectVarOfTarget(arg_2_0)
-	for iter_2_0, iter_2_1 in pairs(ContainerItems) do
+function SelectVarOfTarget_Duo1(arg_2_0)
+	for iter_2_0, iter_2_1 in pairs(ContainerItems_Duo1) do
 		iter_2_1:SetVariant(0)
 
 		if iter_2_1:IsEqual(arg_2_0.widget) then
@@ -677,16 +677,16 @@ function SelectVarOfTarget(arg_2_0)
 
 			var_0_24.current_target = iter_2_0
 
-			SetPreview(iter_2_0)
+			SetPreview_Duo1(iter_2_0)
 		end
 	end
 end
 
-function GetGameLocalization()
+function GetGameLocalization_Duo1()
 	return common.GetLocalization()
 end
 
-function L(arg_4_0)
+function L_Duo1(arg_4_0)
 	if Locales[var_0_17] and Locales[var_0_17][arg_4_0] then
 		return Locales[var_0_17][arg_4_0]
 	else
@@ -694,7 +694,7 @@ function L(arg_4_0)
 	end
 end
 
-function GetTableSize(arg_5_0)
+function GetTableSize_Duo1(arg_5_0)
 	if not arg_5_0 then
 		return 0
 	end
@@ -708,7 +708,7 @@ function GetTableSize(arg_5_0)
 	return var_5_0
 end
 
-function MoveWidget(arg_6_0, arg_6_1)
+function MoveWidget_Duo1(arg_6_0, arg_6_1)
 	local var_6_0 = arg_6_0:GetPlacementPlain()
 
 	if arg_6_1.posX then
@@ -738,13 +738,13 @@ function MoveWidget(arg_6_0, arg_6_1)
 	arg_6_0:SetPlacementPlain(var_6_0)
 end
 
-function Round(arg_7_0, arg_7_1)
+function Round_Duo1(arg_7_0, arg_7_1)
 	local var_7_0 = 10^(arg_7_1 or 0)
 
 	return math.floor(arg_7_0 * var_7_0 + 0.5) / var_7_0
 end
 
-function eventAvatarTargetChanged()
+function eventAvatarTargetChanged_Duo1()
 	local var_8_0 = avatar.GetTarget()
 	local var_8_1 = avatar.GetId()
 
@@ -753,63 +753,63 @@ function eventAvatarTargetChanged()
 	var_0_4:Show(false)
 	var_0_1:Show(false)
 
-	for iter_8_0, iter_8_1 in pairs(Targets) do
-		if Targets[iter_8_0] then
-			wtControl3D:RemoveWidget3D(Targets[iter_8_0])
-			Targets[iter_8_0]:DestroyWidget()
+	for iter_8_0, iter_8_1 in pairs(Targets_Duo1) do
+		if Targets_Duo1[iter_8_0] then
+			wtControl3D_Duo1:RemoveWidget3D(Targets_Duo1[iter_8_0])
+			Targets_Duo1[iter_8_0]:DestroyWidget()
 
-			Targets[iter_8_0] = nil
+			Targets_Duo1[iter_8_0] = nil
 		end
 	end
 
 	if var_8_0 and object.IsExist(var_8_0) and object.IsUnit(var_8_0) then
 		if var_0_24.show_mark == true and var_8_0 ~= var_8_1 and object.GetPos(var_8_1) then
-			Targets[var_8_0] = mainForm:CreateWidgetByDesc(TargetDesc)
-			var_0_31.sizeX = TargetsDB[var_0_24.current_target].max_size
-			var_0_31.sizeY = TargetsDB[var_0_24.current_target].max_size
-			var_0_32.sizeX = TargetsDB[var_0_24.current_target].min_size
-			var_0_32.sizeY = TargetsDB[var_0_24.current_target].min_size
+			Targets_Duo1[var_8_0] = mainForm:CreateWidgetByDesc(TargetDesc_Duo1)
+			var_0_31.sizeX = TargetsDB_Duo1[var_0_24.current_target].max_size
+			var_0_31.sizeY = TargetsDB_Duo1[var_0_24.current_target].max_size
+			var_0_32.sizeX = TargetsDB_Duo1[var_0_24.current_target].min_size
+			var_0_32.sizeY = TargetsDB_Duo1[var_0_24.current_target].min_size
 
-			if TargetsDB[var_0_24.current_target].resize_speed > 0 then
-				Targets[var_8_0]:PlayResizeEffect(var_0_31, var_0_32, TargetsDB[var_0_24.current_target].resize_speed, EA_SYMMETRIC_FLASH)
+			if TargetsDB_Duo1[var_0_24.current_target].resize_speed > 0 then
+				Targets_Duo1[var_8_0]:PlayResizeEffect(var_0_31, var_0_32, TargetsDB_Duo1[var_0_24.current_target].resize_speed, EA_SYMMETRIC_FLASH)
 			else
-				Targets[var_8_0]:SetPlacementPlain(var_0_31)
+				Targets_Duo1[var_8_0]:SetPlacementPlain(var_0_31)
 			end
 
-			if TargetsDB[var_0_24.current_target].rotate_speed > 0 then
-				Targets[var_8_0]:PlayRotationEffect(0, -2 * math.pi, TargetsDB[var_0_24.current_target].rotate_speed, EA_MONOTONOUS_INCREASE)
+			if TargetsDB_Duo1[var_0_24.current_target].rotate_speed > 0 then
+				Targets_Duo1[var_8_0]:PlayRotationEffect(0, -2 * math.pi, TargetsDB_Duo1[var_0_24.current_target].rotate_speed, EA_MONOTONOUS_INCREASE)
 			end
 
 			if unit.IsEnemy(var_8_0) then
-				Targets[var_8_0]:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[var_0_24.current_target].enemy.back))
-				Targets[var_8_0]:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[var_0_24.current_target].enemy.front))
-				Targets[var_8_0]:SetBackgroundColor(TargetsDB[var_0_24.current_target].enemy.color)
-				Targets[var_8_0]:SetForegroundColor(TargetsDB[var_0_24.current_target].enemy.color)
-				Targets[var_8_0]:SetForegroundBlendEffect(TargetsDB[var_0_24.current_target].blend)
+				Targets_Duo1[var_8_0]:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[var_0_24.current_target].enemy.back))
+				Targets_Duo1[var_8_0]:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[var_0_24.current_target].enemy.front))
+				Targets_Duo1[var_8_0]:SetBackgroundColor(TargetsDB_Duo1[var_0_24.current_target].enemy.color)
+				Targets_Duo1[var_8_0]:SetForegroundColor(TargetsDB_Duo1[var_0_24.current_target].enemy.color)
+				Targets_Duo1[var_8_0]:SetForegroundBlendEffect(TargetsDB_Duo1[var_0_24.current_target].blend)
 			elseif unit.IsFriend(var_8_0) then
-				Targets[var_8_0]:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[var_0_24.current_target].friend.back))
-				Targets[var_8_0]:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[var_0_24.current_target].friend.front))
-				Targets[var_8_0]:SetBackgroundColor(TargetsDB[var_0_24.current_target].friend.color)
-				Targets[var_8_0]:SetForegroundColor(TargetsDB[var_0_24.current_target].friend.color)
-				Targets[var_8_0]:SetForegroundBlendEffect(TargetsDB[var_0_24.current_target].blend)
+				Targets_Duo1[var_8_0]:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[var_0_24.current_target].friend.back))
+				Targets_Duo1[var_8_0]:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[var_0_24.current_target].friend.front))
+				Targets_Duo1[var_8_0]:SetBackgroundColor(TargetsDB_Duo1[var_0_24.current_target].friend.color)
+				Targets_Duo1[var_8_0]:SetForegroundColor(TargetsDB_Duo1[var_0_24.current_target].friend.color)
+				Targets_Duo1[var_8_0]:SetForegroundBlendEffect(TargetsDB_Duo1[var_0_24.current_target].blend)
 			else
-				Targets[var_8_0]:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[var_0_24.current_target].neutral.back))
-				Targets[var_8_0]:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB[var_0_24.current_target].neutral.front))
-				Targets[var_8_0]:SetBackgroundColor(TargetsDB[var_0_24.current_target].neutral.color)
-				Targets[var_8_0]:SetForegroundColor(TargetsDB[var_0_24.current_target].neutral.color)
-				Targets[var_8_0]:SetForegroundBlendEffect(TargetsDB[var_0_24.current_target].blend)
+				Targets_Duo1[var_8_0]:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[var_0_24.current_target].neutral.back))
+				Targets_Duo1[var_8_0]:SetForegroundTexture(common.GetAddonRelatedGroupTexture("Targets", TargetsDB_Duo1[var_0_24.current_target].neutral.front))
+				Targets_Duo1[var_8_0]:SetBackgroundColor(TargetsDB_Duo1[var_0_24.current_target].neutral.color)
+				Targets_Duo1[var_8_0]:SetForegroundColor(TargetsDB_Duo1[var_0_24.current_target].neutral.color)
+				Targets_Duo1[var_8_0]:SetForegroundBlendEffect(TargetsDB_Duo1[var_0_24.current_target].blend)
 			end
 
-			wtControl3D:AddWidget3D(Targets[var_8_0], {
+			wtControl3D_Duo1:AddWidget3D(Targets_Duo1[var_8_0], {
 				sizeY = 2,
 				sizeX = 2
 			}, object.GetPos(var_8_1), true, false, 1000, WIDGET_3D_BIND_POINT_CENTER, 1, 1)
-			object.AttachWidget3D(var_8_0, wtControl3D, Targets[var_8_0], TargetsDB[var_0_24.current_target].height)
-			Targets[var_8_0]:Show(var_0_24.show_mark)
+			object.AttachWidget3D(var_8_0, wtControl3D_Duo1, Targets_Duo1[var_8_0], TargetsDB_Duo1[var_0_24.current_target].height)
+			Targets_Duo1[var_8_0]:Show(var_0_24.show_mark)
 		end
 
 		if var_0_5[var_8_0] and var_0_5[var_8_0] > 0 and var_0_25[var_0_5[var_8_0]] and var_0_25[var_0_5[var_8_0]].drawed then
-			MoveWidget(var_0_1, {
+			MoveWidget_Duo1(var_0_1, {
 				posX = var_0_16 - 2 + (var_0_25[var_0_5[var_8_0]].X - 1) * var_0_22,
 				posY = var_0_15 - 2 + (var_0_25[var_0_5[var_8_0]].Y - 1) * var_0_23,
 				sizeX = var_0_22 + 4,
@@ -823,21 +823,21 @@ function eventAvatarTargetChanged()
 		end
 	end
 
-	Arrow:Show(false)
+	Arrow_Duo1:Show(false)
 
 	if var_0_24.show_arrow == true and var_8_0 and object.IsExist(var_8_0) and var_8_0 ~= var_8_1 then
 		local var_8_2 = object.GetPos(var_8_0)
 
 		if var_8_2 then
-			CreateArrow(var_8_2)
-			Arrow:Show(var_0_24.show_arrow)
+			CreateArrow_Duo1(var_8_2)
+			Arrow_Duo1:Show(var_0_24.show_arrow)
 		else
-			Arrow:Show(false)
+			Arrow_Duo1:Show(false)
 		end
 	end
 end
 
-function eventObjectHealthChanged(arg_9_0)
+function eventObjectHealthChanged_Duo1(arg_9_0)
 	if arg_9_0.id and object.IsExist(arg_9_0.id) and object.IsUnit(arg_9_0.id) and var_0_5[arg_9_0.id] and var_0_5[arg_9_0.id] > 0 and var_0_25[var_0_5[arg_9_0.id]] and var_0_25[var_0_5[arg_9_0.id]].drawed then
 		local var_9_0 = object.GetHealthInfo(arg_9_0.id)
 
@@ -845,105 +845,105 @@ function eventObjectHealthChanged(arg_9_0)
 			local var_9_1 = object.GetHealthInfo(arg_9_0.id).valuePercents
 
 			if var_9_1 then
-				MoveWidget(Foregrounds[var_0_25[var_0_5[arg_9_0.id]].X][var_0_25[var_0_5[arg_9_0.id]].Y], {
+				MoveWidget_Duo1(Foregrounds_Duo1[var_0_25[var_0_5[arg_9_0.id]].X][var_0_25[var_0_5[arg_9_0.id]].Y], {
 					highPosX = math.ceil((var_0_22 - 20) * (100 - var_9_1) / 100)
 				})
 			end
 
 			if var_9_0.isInvulnerable then
-				Bubbles[var_0_25[var_0_5[arg_9_0.id]].X][var_0_25[var_0_5[arg_9_0.id]].Y]:Show(true)
+				Bubbles_Duo1[var_0_25[var_0_5[arg_9_0.id]].X][var_0_25[var_0_5[arg_9_0.id]].Y]:Show(true)
 			else
-				Bubbles[var_0_25[var_0_5[arg_9_0.id]].X][var_0_25[var_0_5[arg_9_0.id]].Y]:Show(false)
+				Bubbles_Duo1[var_0_25[var_0_5[arg_9_0.id]].X][var_0_25[var_0_5[arg_9_0.id]].Y]:Show(false)
 			end
 		end
 	end
 end
 
-function eventObjectSelectableChanged(arg_10_0)
+function eventObjectSelectableChanged_Duo1(arg_10_0)
 	if arg_10_0.objectId and object.IsExist(arg_10_0.objectId) and object.IsUnit(arg_10_0.objectId) and var_0_5[arg_10_0.objectId] and var_0_5[arg_10_0.objectId] > 0 and var_0_25[var_0_5[arg_10_0.objectId]] and var_0_25[var_0_5[arg_10_0.objectId]].drawed then
 		if unit.CanSelectTarget(arg_10_0.objectId) then
-			Names[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:SetFade(1)
-			Foregrounds[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:SetFade(1)
-			UnitButtons[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:Show(true)
-			UnitButtons[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:Enable(true)
+			Names_Duo1[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:SetFade(1)
+			Foregrounds_Duo1[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:SetFade(1)
+			UnitButtons_Duo1[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:Show(true)
+			UnitButtons_Duo1[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:Enable(true)
 		else
-			Names[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:SetFade(0.5)
-			Foregrounds[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:SetFade(0.5)
-			UnitButtons[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:Show(true)
-			UnitButtons[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:Enable(false)
+			Names_Duo1[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:SetFade(0.5)
+			Foregrounds_Duo1[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:SetFade(0.5)
+			UnitButtons_Duo1[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:Show(true)
+			UnitButtons_Duo1[var_0_25[var_0_5[arg_10_0.objectId]].X][var_0_25[var_0_5[arg_10_0.objectId]].Y]:Enable(false)
 		end
 	end
 end
 
-function eventUnitDeadChanged(arg_11_0)
+function eventUnitDeadChanged_Duo1(arg_11_0)
 	if arg_11_0.unitId and object.IsExist(arg_11_0.unitId) and object.IsUnit(arg_11_0.unitId) and var_0_5[arg_11_0.unitId] and var_0_5[arg_11_0.unitId] > 0 and var_0_25[var_0_5[arg_11_0.unitId]] and var_0_25[var_0_5[arg_11_0.unitId]].drawed then
 		if object.IsDead(arg_11_0.unitId) then
-			Names[var_0_25[var_0_5[arg_11_0.unitId]].X][var_0_25[var_0_5[arg_11_0.unitId]].Y]:SetVal("Dead", var_0_0)
+			Names_Duo1[var_0_25[var_0_5[arg_11_0.unitId]].X][var_0_25[var_0_5[arg_11_0.unitId]].Y]:SetVal("Dead", var_0_0)
 		else
-			Names[var_0_25[var_0_5[arg_11_0.unitId]].X][var_0_25[var_0_5[arg_11_0.unitId]].Y]:SetVal("Dead", common.GetEmptyWString())
+			Names_Duo1[var_0_25[var_0_5[arg_11_0.unitId]].X][var_0_25[var_0_5[arg_11_0.unitId]].Y]:SetVal("Dead", common.GetEmptyWString())
 		end
 	end
 end
 
-function eventObjectCombatChanged(arg_12_0)
+function eventObjectCombatChanged_Duo1(arg_12_0)
 	if var_0_24.Rezhim == 3 and var_0_24.multi_columns == true and arg_12_0.objectId and object.IsExist(arg_12_0.objectId) and object.IsUnit(arg_12_0.objectId) and var_0_5[arg_12_0.objectId] and var_0_5[arg_12_0.objectId] > 0 and var_0_25[var_0_5[arg_12_0.objectId]] and var_0_25[var_0_5[arg_12_0.objectId]].drawed then
 		var_0_26 = true
 	end
 end
 
-function eventRelationChanged(arg_13_0)
+function eventRelationChanged_Duo1(arg_13_0)
 	if (var_0_24.Rezhim == 1 or var_0_24.Rezhim == 2 or var_0_24.Rezhim == 4) and arg_13_0.unitId and object.IsExist(arg_13_0.unitId) and object.IsUnit(arg_13_0.unitId) and (unit.IsPlayer(arg_13_0.unitId) or unit.IsPet(arg_13_0.unitId)) and var_0_5[arg_13_0.unitId] then
 		var_0_26 = true
 
 		if var_0_24.Rezhim == 1 or var_0_24.Rezhim == 2 then
-			if Buff[arg_13_0.unitId] then
-				for iter_13_0, iter_13_1 in pairs(Buff[arg_13_0.unitId]) do
-					Buff[arg_13_0.unitId][iter_13_0]:DestroyWidget()
+			if Buff_Duo1[arg_13_0.unitId] then
+				for iter_13_0, iter_13_1 in pairs(Buff_Duo1[arg_13_0.unitId]) do
+					Buff_Duo1[arg_13_0.unitId][iter_13_0]:DestroyWidget()
 
-					Buff[arg_13_0.unitId][iter_13_0] = nil
+					Buff_Duo1[arg_13_0.unitId][iter_13_0] = nil
 				end
 
-				Buff[arg_13_0.unitId] = nil
+				Buff_Duo1[arg_13_0.unitId] = nil
 			end
 
 			var_0_21[arg_13_0.unitId] = nil
 
-			if BuffMini[arg_13_0.unitId] then
-				for iter_13_2, iter_13_3 in pairs(BuffMini[arg_13_0.unitId]) do
-					BuffMini[arg_13_0.unitId][iter_13_2]:DestroyWidget()
+			if BuffMini_Duo1[arg_13_0.unitId] then
+				for iter_13_2, iter_13_3 in pairs(BuffMini_Duo1[arg_13_0.unitId]) do
+					BuffMini_Duo1[arg_13_0.unitId][iter_13_2]:DestroyWidget()
 
-					BuffMini[arg_13_0.unitId][iter_13_2] = nil
+					BuffMini_Duo1[arg_13_0.unitId][iter_13_2] = nil
 				end
 
-				BuffMini[arg_13_0.unitId] = nil
+				BuffMini_Duo1[arg_13_0.unitId] = nil
 			end
 
 			if var_0_24.Rezhim == 1 and unit.IsEnemy(arg_13_0.unitId) or var_0_24.Rezhim == 2 and not unit.IsEnemy(arg_13_0.unitId) then
-				StartUpAddBuff(arg_13_0.unitId)
+				StartUpAddBuff_Duo1(arg_13_0.unitId)
 			end
 		end
 	end
 end
 
-function eventEffectFinished(arg_14_0)
-	for iter_14_0, iter_14_1 in pairs(Targets) do
-		if arg_14_0.wtOwner:IsEqual(Targets[iter_14_0]) then
+function eventEffectFinished_Duo1(arg_14_0)
+	for iter_14_0, iter_14_1 in pairs(Targets_Duo1) do
+		if arg_14_0.wtOwner:IsEqual(Targets_Duo1[iter_14_0]) then
 			if arg_14_0.effectType == ET_TEXTURE_ROTATION then
-				local var_14_0 = TargetsDB[var_0_24.current_target].rotate_speed
+				local var_14_0 = TargetsDB_Duo1[var_0_24.current_target].rotate_speed
 
 				if var_14_0 > 0 then
-					Targets[iter_14_0]:PlayRotationEffect(0, -2 * math.pi, var_14_0, EA_MONOTONOUS_INCREASE)
+					Targets_Duo1[iter_14_0]:PlayRotationEffect(0, -2 * math.pi, var_14_0, EA_MONOTONOUS_INCREASE)
 				end
 			end
 
-			if arg_14_0.effectType == ET_RESIZE and TargetsDB[var_0_24.current_target].resize_speed > 0 then
-				Targets[iter_14_0]:PlayResizeEffect(var_0_31, var_0_32, TargetsDB[var_0_24.current_target].resize_speed, EA_SYMMETRIC_FLASH)
+			if arg_14_0.effectType == ET_RESIZE and TargetsDB_Duo1[var_0_24.current_target].resize_speed > 0 then
+				Targets_Duo1[iter_14_0]:PlayResizeEffect(var_0_31, var_0_32, TargetsDB_Duo1[var_0_24.current_target].resize_speed, EA_SYMMETRIC_FLASH)
 			end
 		end
 	end
 end
 
-function AvatarPosChange()
+function AvatarPosChange_Duo1()
 	if var_0_24.show_arrow == true then
 		local var_15_0 = avatar.GetTarget()
 		local var_15_1 = avatar.GetId()
@@ -952,18 +952,18 @@ function AvatarPosChange()
 			local var_15_2 = object.GetPos(var_15_0)
 
 			if var_15_2 then
-				CreateArrow(var_15_2)
-				Arrow:Show(var_0_24.show_arrow)
+				CreateArrow_Duo1(var_15_2)
+				Arrow_Duo1:Show(var_0_24.show_arrow)
 			else
-				Arrow:Show(false)
+				Arrow_Duo1:Show(false)
 			end
 		else
-			Arrow:Show(false)
+			Arrow_Duo1:Show(false)
 		end
 	end
 end
 
-function PartyPosChange(arg_16_0)
+function PartyPosChange_Duo1(arg_16_0)
 	if var_0_24.show_arrow == true then
 		local var_16_0 = avatar.GetTarget()
 
@@ -971,26 +971,26 @@ function PartyPosChange(arg_16_0)
 			local var_16_1 = object.GetPos(var_16_0)
 
 			if var_16_1 then
-				CreateArrow(var_16_1)
-				Arrow:Show(var_0_24.show_arrow)
+				CreateArrow_Duo1(var_16_1)
+				Arrow_Duo1:Show(var_0_24.show_arrow)
 			else
-				Arrow:Show(false)
+				Arrow_Duo1:Show(false)
 			end
 		end
 	end
 end
 
-function CreateArrow(arg_17_0)
+function CreateArrow_Duo1(arg_17_0)
 	local var_17_0 = avatar.GetPos()
 	local var_17_1 = math.atan2(arg_17_0.posY - var_17_0.posY, arg_17_0.posX - var_17_0.posX)
 	local var_17_2 = mission.GetCameraDirection()
 	local var_17_3 = math.floor(math.sqrt((arg_17_0.posX - var_17_0.posX)^2 + (arg_17_0.posY - var_17_0.posY)^2 + (arg_17_0.posZ - var_17_0.posZ)^2))
 
-	ArrowText:SetVal("Distance", common.FormatInt(var_17_3, "%d"))
-	Arrow:Rotate(var_17_1 - var_17_2)
+	ArrowText_Duo1:SetVal("Distance", common.FormatInt(var_17_3, "%d"))
+	Arrow_Duo1:Rotate(var_17_1 - var_17_2)
 end
 
-function eventLibGS(arg_18_0)
+function eventLibGS_Duo1(arg_18_0)
 	if var_0_24.show_gear == true and arg_18_0.unitId == avatar.GetTarget() then
 		if arg_18_0.gearscore and arg_18_0.gearscoreStyle then
 			var_0_2:SetVal("value", userMods.ToWString(tostring(math.floor(arg_18_0.gearscore + 0.5))))
@@ -1004,7 +1004,7 @@ function eventLibGS(arg_18_0)
 			var_0_4:Show(false) -- отключаем видимость ступени покровы
 		end
 
-		if arg_18_0.runes and GetTableSize(arg_18_0.runes) > 0 then
+		if arg_18_0.runes and GetTableSize_Duo1(arg_18_0.runes) > 0 then
 			var_0_3:SetVal("rune1", arg_18_0.deathInsuranceLvl)
 			var_0_3:SetClassVal("class1", "Relic")
 			var_0_3:Show(true)
@@ -1014,7 +1014,7 @@ function eventLibGS(arg_18_0)
 	end
 end
 
-function PrepareList()
+function PrepareList_Duo1()
 	local var_19_0 = 14
 	local var_19_1 = 1
 	local var_19_2 = 1
@@ -1045,45 +1045,45 @@ function PrepareList()
 
 	for iter_19_0 = 1, 4 do
 		for iter_19_1 = 1, 24 do
-			MoveWidget(UnitBars[iter_19_0][iter_19_1], {
+			MoveWidget_Duo1(UnitBars_Duo1[iter_19_0][iter_19_1], {
 				posX = var_0_16 + (iter_19_0 - 1) * var_0_22,
 				posY = var_0_15 + (iter_19_1 - 1) * var_0_23,
 				sizeX = var_0_22,
 				sizeY = var_0_23
 			})
-			MoveWidget(UnitButtons[iter_19_0][iter_19_1], {
+			MoveWidget_Duo1(UnitButtons_Duo1[iter_19_0][iter_19_1], {
 				posX = var_0_16 + (iter_19_0 - 1) * var_0_22,
 				posY = var_0_15 + (iter_19_1 - 1) * var_0_23,
 				sizeX = var_0_22,
 				sizeY = var_0_23
 			})
-			Names[iter_19_0][iter_19_1]:SetFormat(userMods.ToWString(var_19_5))
-			Names[iter_19_0][iter_19_1]:SetClassVal("class", "tip_white")
+			Names_Duo1[iter_19_0][iter_19_1]:SetFormat(userMods.ToWString(var_19_5))
+			Names_Duo1[iter_19_0][iter_19_1]:SetClassVal("class", "tip_white")
 		end
 	end
 
-	MoveWidget(MainPanel, {
+	MoveWidget_Duo1(MainPanel_Duo1, {
 		sizeX = math.max(var_0_16 * 2 + var_0_22 * var_19_3, 191),
 		sizeY = var_0_15 + var_0_24.maxRows * var_0_23
 	})
 end
 
-function HideList()
+function HideList_Duo1()
 	for iter_20_0 = 1, 4 do
 		for iter_20_1 = 1, 24 do
-			UnitBars[iter_20_0][iter_20_1]:Show(false)
-			UnitButtons[iter_20_0][iter_20_1]:Show(false)
-			UnitButtons[iter_20_0][iter_20_1]:Enable(false)
+			UnitBars_Duo1[iter_20_0][iter_20_1]:Show(false)
+			UnitButtons_Duo1[iter_20_0][iter_20_1]:Show(false)
+			UnitButtons_Duo1[iter_20_0][iter_20_1]:Enable(false)
 		end
 	end
 
-	HideBuffMini()
+	HideBuffMini_Duo1()
 end
 
-function HideBuffMini()
-	for iter_21_0, iter_21_1 in pairs(widgetsMini) do
+function HideBuffMini_Duo1()
+	for iter_21_0, iter_21_1 in pairs(widgetsMini_Duo1) do
 		if iter_21_1 and iter_21_1:IsVisible() then
-			MoveWidget(iter_21_1, {
+			MoveWidget_Duo1(iter_21_1, {
 				posY = -100,
 				sizeY = 20
 			})
@@ -1091,53 +1091,53 @@ function HideBuffMini()
 	end
 end
 
-function RepaintList()
-	HideList()
+function RepaintList_Duo1()
+	HideList_Duo1()
 	var_0_1:Show(false)
 
 	local var_22_0 = avatar.GetTarget()
 
 	for iter_22_0, iter_22_1 in pairs(var_0_25) do
 		if iter_22_1.Y <= math.min(var_0_24.maxRows, 24) then
-			Foregrounds[iter_22_1.X][iter_22_1.Y]:SetBackgroundColor(var_0_10[iter_22_1.class])
-			Icons[iter_22_1.X][iter_22_1.Y]:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("PlayerClasses", iter_22_1.icon))
-			Icons[iter_22_1.X][iter_22_1.Y]:SetBackgroundColor(var_0_9[iter_22_1.class])
-			Names[iter_22_1.X][iter_22_1.Y]:SetVal("Name", iter_22_1.name)
+			Foregrounds_Duo1[iter_22_1.X][iter_22_1.Y]:SetBackgroundColor(var_0_10[iter_22_1.class])
+			Icons_Duo1[iter_22_1.X][iter_22_1.Y]:SetBackgroundTexture(common.GetAddonRelatedGroupTexture("PlayerClasses", iter_22_1.icon))
+			Icons_Duo1[iter_22_1.X][iter_22_1.Y]:SetBackgroundColor(var_0_9[iter_22_1.class])
+			Names_Duo1[iter_22_1.X][iter_22_1.Y]:SetVal("Name", iter_22_1.name)
 
 			if iter_22_1.dead then
-				Names[iter_22_1.X][iter_22_1.Y]:SetVal("Dead", var_0_0)
+				Names_Duo1[iter_22_1.X][iter_22_1.Y]:SetVal("Dead", var_0_0)
 			else
-				Names[iter_22_1.X][iter_22_1.Y]:SetVal("Dead", common.GetEmptyWString())
+				Names_Duo1[iter_22_1.X][iter_22_1.Y]:SetVal("Dead", common.GetEmptyWString())
 			end
 
-			Levels[iter_22_1.X][iter_22_1.Y]:SetVal("Level", iter_22_1.level)
-			UnitBars[iter_22_1.X][iter_22_1.Y]:Show(true)
-			MoveWidget(Foregrounds[iter_22_1.X][iter_22_1.Y], {
+			Levels_Duo1[iter_22_1.X][iter_22_1.Y]:SetVal("Level", iter_22_1.level)
+			UnitBars_Duo1[iter_22_1.X][iter_22_1.Y]:Show(true)
+			MoveWidget_Duo1(Foregrounds_Duo1[iter_22_1.X][iter_22_1.Y], {
 				highPosX = math.ceil((var_0_22 - 20) * (100 - iter_22_1.percent) / 100)
 			})
 
 			if iter_22_1.bubble == true then
-				Bubbles[iter_22_1.X][iter_22_1.Y]:Show(true)
+				Bubbles_Duo1[iter_22_1.X][iter_22_1.Y]:Show(true)
 			else
-				Bubbles[iter_22_1.X][iter_22_1.Y]:Show(false)
+				Bubbles_Duo1[iter_22_1.X][iter_22_1.Y]:Show(false)
 			end
 
 			if iter_22_1.selectable == true then
-				Names[iter_22_1.X][iter_22_1.Y]:SetFade(1)
-				Foregrounds[iter_22_1.X][iter_22_1.Y]:SetFade(1)
-				UnitButtons[iter_22_1.X][iter_22_1.Y]:SetName("PlayerButton_" .. iter_22_1.id)
-				UnitButtons[iter_22_1.X][iter_22_1.Y]:Show(true)
-				UnitButtons[iter_22_1.X][iter_22_1.Y]:Enable(true)
+				Names_Duo1[iter_22_1.X][iter_22_1.Y]:SetFade(1)
+				Foregrounds_Duo1[iter_22_1.X][iter_22_1.Y]:SetFade(1)
+				UnitButtons_Duo1[iter_22_1.X][iter_22_1.Y]:SetName("PlayerButton_" .. iter_22_1.id)
+				UnitButtons_Duo1[iter_22_1.X][iter_22_1.Y]:Show(true)
+				UnitButtons_Duo1[iter_22_1.X][iter_22_1.Y]:Enable(true)
 			else
-				Names[iter_22_1.X][iter_22_1.Y]:SetFade(0.5)
-				Foregrounds[iter_22_1.X][iter_22_1.Y]:SetFade(0.5)
-				UnitButtons[iter_22_1.X][iter_22_1.Y]:SetName("PlayerButton_" .. iter_22_1.id)
-				UnitButtons[iter_22_1.X][iter_22_1.Y]:Show(true)
-				UnitButtons[iter_22_1.X][iter_22_1.Y]:Enable(false)
+				Names_Duo1[iter_22_1.X][iter_22_1.Y]:SetFade(0.5)
+				Foregrounds_Duo1[iter_22_1.X][iter_22_1.Y]:SetFade(0.5)
+				UnitButtons_Duo1[iter_22_1.X][iter_22_1.Y]:SetName("PlayerButton_" .. iter_22_1.id)
+				UnitButtons_Duo1[iter_22_1.X][iter_22_1.Y]:Show(true)
+				UnitButtons_Duo1[iter_22_1.X][iter_22_1.Y]:Enable(false)
 			end
 
-			if var_0_24.show_mini == true and iter_22_1.id and widgetsMini[iter_22_1.id] and widgetsMini[iter_22_1.id]:IsVisible() then
-				MoveWidget(widgetsMini[iter_22_1.id], {
+			if var_0_24.show_mini == true and iter_22_1.id and widgetsMini_Duo1[iter_22_1.id] and widgetsMini_Duo1[iter_22_1.id]:IsVisible() then
+				MoveWidget_Duo1(widgetsMini_Duo1[iter_22_1.id], {
 					posX = var_0_16 + 20 + (iter_22_1.X - 1) * var_0_22,
 					posY = var_0_15 + (iter_22_1.Y - 1) * var_0_23,
 					sizeX = var_0_22 - 20,
@@ -1146,7 +1146,7 @@ function RepaintList()
 			end
 
 			if var_22_0 and iter_22_1.id and var_22_0 == iter_22_1.id then
-				MoveWidget(var_0_1, {
+				MoveWidget_Duo1(var_0_1, {
 					posX = var_0_16 - 2 + (iter_22_1.X - 1) * var_0_22,
 					posY = var_0_15 - 2 + (iter_22_1.Y - 1) * var_0_23,
 					sizeX = var_0_22 + 4,
@@ -1164,7 +1164,7 @@ function RepaintList()
 	end
 end
 
-function reactionSelectTarget(arg_23_0)
+function reactionSelectTarget_Duo1(arg_23_0)
 	local var_23_0 = tonumber(string.sub(arg_23_0.sender, 14))
 
 	if var_23_0 and object.IsExist(var_23_0) then
@@ -1172,7 +1172,7 @@ function reactionSelectTarget(arg_23_0)
 	end
 end
 
-function eventUnitsChanged(arg_24_0)
+function eventUnitsChanged_Duo1(arg_24_0)
 	for iter_24_0, iter_24_1 in pairs(arg_24_0.spawned) do
 		var_0_5[iter_24_1] = 0
 
@@ -1181,8 +1181,8 @@ function eventUnitsChanged(arg_24_0)
 				objectId = iter_24_1
 			}
 
-			common.RegisterEventHandler(eventBuffsChanged, "EVENT_OBJECT_BUFFS_CHANGED", var_0_6[iter_24_1])
-			common.RegisterEventHandler(eventBuffsAdded, "EVENT_OBJECT_BUFF_ADDED", var_0_6[iter_24_1])
+			common.RegisterEventHandler(eventBuffsChanged_Duo1, "EVENT_OBJECT_BUFFS_CHANGED", var_0_6[iter_24_1])
+			common.RegisterEventHandler(eventBuffsAdded_Duo1, "EVENT_OBJECT_BUFF_ADDED", var_0_6[iter_24_1])
 		end
 	end
 
@@ -1190,68 +1190,68 @@ function eventUnitsChanged(arg_24_0)
 		var_0_5[iter_24_3] = nil
 
 		if var_0_7 == false and var_0_24.disable_buffs == false and var_0_6[iter_24_3] then
-			common.UnRegisterEventHandler(eventBuffsChanged, "EVENT_OBJECT_BUFFS_CHANGED", var_0_6[iter_24_3])
-			common.UnRegisterEventHandler(eventBuffsAdded, "EVENT_OBJECT_BUFF_ADDED", var_0_6[iter_24_3])
+			common.UnRegisterEventHandler(eventBuffsChanged_Duo1, "EVENT_OBJECT_BUFFS_CHANGED", var_0_6[iter_24_3])
+			common.UnRegisterEventHandler(eventBuffsAdded_Duo1, "EVENT_OBJECT_BUFF_ADDED", var_0_6[iter_24_3])
 
 			var_0_6[iter_24_3] = nil
 		end
 
-		if Buff[iter_24_3] then
-			for iter_24_4, iter_24_5 in pairs(Buff[iter_24_3]) do
-				Buff[iter_24_3][iter_24_4]:DestroyWidget()
+		if Buff_Duo1[iter_24_3] then
+			for iter_24_4, iter_24_5 in pairs(Buff_Duo1[iter_24_3]) do
+				Buff_Duo1[iter_24_3][iter_24_4]:DestroyWidget()
 
-				Buff[iter_24_3][iter_24_4] = nil
+				Buff_Duo1[iter_24_3][iter_24_4] = nil
 			end
 
-			Buff[iter_24_3] = nil
+			Buff_Duo1[iter_24_3] = nil
 		end
 
 		var_0_21[iter_24_3] = nil
 
-		if BuffMini[iter_24_3] then
-			for iter_24_6, iter_24_7 in pairs(BuffMini[iter_24_3]) do
-				BuffMini[iter_24_3][iter_24_6]:DestroyWidget()
+		if BuffMini_Duo1[iter_24_3] then
+			for iter_24_6, iter_24_7 in pairs(BuffMini_Duo1[iter_24_3]) do
+				BuffMini_Duo1[iter_24_3][iter_24_6]:DestroyWidget()
 
-				BuffMini[iter_24_3][iter_24_6] = nil
+				BuffMini_Duo1[iter_24_3][iter_24_6] = nil
 			end
 
-			BuffMini[iter_24_3] = nil
+			BuffMini_Duo1[iter_24_3] = nil
 		end
 
-		if widgets[iter_24_3] then
-			wtControl3D:RemoveWidget3D(widgets[iter_24_3])
-			widgets[iter_24_3]:DestroyWidget()
+		if widgets_Duo1[iter_24_3] then
+			wtControl3D_Duo1:RemoveWidget3D(widgets_Duo1[iter_24_3])
+			widgets_Duo1[iter_24_3]:DestroyWidget()
 
-			widgets[iter_24_3] = nil
+			widgets_Duo1[iter_24_3] = nil
 		end
 
-		if widgetsMini[iter_24_3] then
-			widgetsMini[iter_24_3]:DestroyWidget()
+		if widgetsMini_Duo1[iter_24_3] then
+			widgetsMini_Duo1[iter_24_3]:DestroyWidget()
 
-			widgetsMini[iter_24_3] = nil
+			widgetsMini_Duo1[iter_24_3] = nil
 		end
 	end
 
 	for iter_24_8, iter_24_9 in pairs(var_0_5) do
 		var_0_5[iter_24_8] = 0
 
-		if not widgets[iter_24_8] and not widgetsMini[iter_24_8] then
-			CreateNamePlate(iter_24_8)
+		if not widgets_Duo1[iter_24_8] and not widgetsMini_Duo1[iter_24_8] then
+			CreateNamePlate_Duo1(iter_24_8)
 		end
 
-		if widgets[iter_24_8] then
-			widgets[iter_24_8]:Show(true)
+		if widgets_Duo1[iter_24_8] then
+			widgets_Duo1[iter_24_8]:Show(true)
 		end
 
-		if widgetsMini[iter_24_8] then
-			widgetsMini[iter_24_8]:Show(true)
+		if widgetsMini_Duo1[iter_24_8] then
+			widgetsMini_Duo1[iter_24_8]:Show(true)
 		end
 	end
 
-	CollectUnits()
+	CollectUnits_Duo1()
 end
 
-function CollectUnits()
+function CollectUnits_Duo1()
 	var_0_25 = {}
 
 	if var_0_24.show_panel == true then
@@ -1365,7 +1365,7 @@ function CollectUnits()
 			end
 
 			if var_25_0 > 1 then
-				table.sort(var_0_25, SortUnits)
+				table.sort(var_0_25, SortUnits_Duo1)
 
 				for iter_25_2 = 1, 4 do
 					local var_25_7 = 1
@@ -1380,9 +1380,9 @@ function CollectUnits()
 			end
 
 			if var_0_24.Rezhim == 4 then
-				PanelkaText:SetVal("Number", userMods.ToWString(var_25_1 .. "/" .. var_25_2))
+				PanelkaText_Duo1:SetVal("Number", userMods.ToWString(var_25_1 .. "/" .. var_25_2))
 			else
-				PanelkaText:SetVal("Number", userMods.ToWString(var_25_1 .. ""))
+				PanelkaText_Duo1:SetVal("Number", userMods.ToWString(var_25_1 .. ""))
 			end
 		elseif var_0_24.Rezhim == 3 then
 			for iter_25_5, iter_25_6 in pairs(var_0_5) do
@@ -1433,7 +1433,7 @@ function CollectUnits()
 			end
 
 			if var_25_0 > 1 then
-				table.sort(var_0_25, SortUnits)
+				table.sort(var_0_25, SortUnits_Duo1)
 
 				for iter_25_7 = 1, 4 do
 					local var_25_10 = 1
@@ -1447,14 +1447,14 @@ function CollectUnits()
 				end
 			end
 
-			PanelkaText:SetVal("Number", userMods.ToWString(var_25_1 .. ""))
+			PanelkaText_Duo1:SetVal("Number", userMods.ToWString(var_25_1 .. ""))
 		end
 
-		RepaintList()
+		RepaintList_Duo1()
 	end
 end
 
-function SortUnits(arg_26_0, arg_26_1)
+function SortUnits_Duo1(arg_26_0, arg_26_1)
 	if arg_26_0.priority > arg_26_1.priority then
 		return true
 	elseif arg_26_0.priority < arg_26_1.priority then
@@ -1476,13 +1476,13 @@ function SortUnits(arg_26_0, arg_26_1)
 	end
 end
 
-function StartUpAddBuff(arg_27_0)
+function StartUpAddBuff_Duo1(arg_27_0)
 	if var_0_24.disable_buffs == false then
 		local var_27_0 = object.GetBuffs(arg_27_0)
 
 		if var_27_0 then
 			for iter_27_0, iter_27_1 in pairs(var_27_0) do
-				eventBuffsAdded({
+				eventBuffsAdded_Duo1({
 					buffId = iter_27_1,
 					objectId = arg_27_0
 				})
@@ -1491,59 +1491,59 @@ function StartUpAddBuff(arg_27_0)
 	end
 end
 
-function CreateNamePlate(arg_28_0)
+function CreateNamePlate_Duo1(arg_28_0)
 	if arg_28_0 and object.IsExist(arg_28_0) and object.IsUnit(arg_28_0) and object.GetPos(avatar.GetId()) then
-		widgets[arg_28_0] = mainForm:CreateWidgetByDesc(widgetdesc)
+		widgets_Duo1[arg_28_0] = mainForm:CreateWidgetByDesc(widgetdesc_Duo1)
 
-		widgets[arg_28_0]:SetBackgroundColor({
+		widgets_Duo1[arg_28_0]:SetBackgroundColor({
 			g = 1,
 			a = 0,
 			b = 0,
 			r = 1
 		})
-		wtControl3D:AddWidget3D(widgets[arg_28_0], {
+		wtControl3D_Duo1:AddWidget3D(widgets_Duo1[arg_28_0], {
 			sizeY = 1.55,
 			sizeX = 0
 		}, object.GetPos(avatar.GetId()), true, false, 400, WIDGET_3D_BIND_POINT_HIGH, 1, 2.66)
-		object.AttachWidget3D(arg_28_0, wtControl3D, widgets[arg_28_0], 0)
+		object.AttachWidget3D(arg_28_0, wtControl3D_Duo1, widgets_Duo1[arg_28_0], 0)
 
-		widgetsMini[arg_28_0] = mainForm:CreateWidgetByDesc(widgetdescMini)
+		widgetsMini_Duo1[arg_28_0] = mainForm:CreateWidgetByDesc(widgetdescMini_Duo1)
 
-		widgetsMini[arg_28_0]:SetBackgroundColor({
+		widgetsMini_Duo1[arg_28_0]:SetBackgroundColor({
 			g = 1,
 			a = 0,
 			b = 0,
 			r = 1
 		})
-		MainPanel:AddChild(widgetsMini[arg_28_0])
-		StartUpAddBuff(arg_28_0)
+		MainPanel_Duo1:AddChild(widgetsMini_Duo1[arg_28_0])
+		StartUpAddBuff_Duo1(arg_28_0)
 	end
 end
 
-function CreateBuff(arg_29_0, arg_29_1, arg_29_2, arg_29_3)
-	if not Buff[arg_29_0] then
-		Buff[arg_29_0] = {}
+function CreateBuff_Duo1(arg_29_0, arg_29_1, arg_29_2, arg_29_3)
+	if not Buff_Duo1[arg_29_0] then
+		Buff_Duo1[arg_29_0] = {}
 	end
 
-	Buff[arg_29_0][arg_29_2] = mainForm:CreateWidgetByDesc(BuffDesc)
+	Buff_Duo1[arg_29_0][arg_29_2] = mainForm:CreateWidgetByDesc(BuffDesc_Duo1)
 
 	if arg_29_1.texture then
-		Buff[arg_29_0][arg_29_2]:GetChildChecked("Icon", false):SetBackgroundTexture(arg_29_1.texture)
+		Buff_Duo1[arg_29_0][arg_29_2]:GetChildChecked("Icon", false):SetBackgroundTexture(arg_29_1.texture)
 	end
 
 	if arg_29_1.stackCount and arg_29_1.stackCount > 1 then
-		Buff[arg_29_0][arg_29_2]:GetChildChecked("Stack", false):SetVal("Stack", common.FormatInt(arg_29_1.stackCount, "%d"))
+		Buff_Duo1[arg_29_0][arg_29_2]:GetChildChecked("Stack", false):SetVal("Stack", common.FormatInt(arg_29_1.stackCount, "%d"))
 	end
 
 	if arg_29_1.isPositive == true then
-		Buff[arg_29_0][arg_29_2]:GetChildChecked("Icon", false):SetForegroundColor({
+		Buff_Duo1[arg_29_0][arg_29_2]:GetChildChecked("Icon", false):SetForegroundColor({
 			g = 1,
 			a = 1,
 			b = 0,
 			r = 0
 		})
 	else
-		Buff[arg_29_0][arg_29_2]:GetChildChecked("Icon", false):SetForegroundColor({
+		Buff_Duo1[arg_29_0][arg_29_2]:GetChildChecked("Icon", false):SetForegroundColor({
 			g = 0,
 			a = 1,
 			b = 0,
@@ -1560,20 +1560,20 @@ function CreateBuff(arg_29_0, arg_29_1, arg_29_2, arg_29_3)
 		end
 
 		if var_29_1 == true and var_29_0 <= var_0_14 then
-			Buff[arg_29_0][arg_29_2]:PlayFadeEffect(var_29_0 / var_0_14, 0, math.max(var_29_0, 1), EA_MONOTONOUS_INCREASE)
+			Buff_Duo1[arg_29_0][arg_29_2]:PlayFadeEffect(var_29_0 / var_0_14, 0, math.max(var_29_0, 1), EA_MONOTONOUS_INCREASE)
 		else
-			Buff[arg_29_0][arg_29_2]:SetFade(1)
+			Buff_Duo1[arg_29_0][arg_29_2]:SetFade(1)
 		end
 
-		local var_29_2 = Round(var_29_0 / 1000)
+		local var_29_2 = Round_Duo1(var_29_0 / 1000)
 		local var_29_3 = var_0_18
 
 		if var_29_2 >= 60 then
-			var_29_2 = Round(var_29_2 / 60)
+			var_29_2 = Round_Duo1(var_29_2 / 60)
 			var_29_3 = var_0_19
 
 			if var_29_2 >= 60 then
-				var_29_2 = Round(var_29_2 / 60)
+				var_29_2 = Round_Duo1(var_29_2 / 60)
 				var_29_3 = var_0_20
 			end
 		end
@@ -1584,34 +1584,34 @@ function CreateBuff(arg_29_0, arg_29_1, arg_29_2, arg_29_3)
 
 		var_0_21[arg_29_0][arg_29_2] = true
 
-		Buff[arg_29_0][arg_29_2]:GetChildChecked("Time", false):SetVal("Time", userMods.ToWString(var_29_2 .. "" .. var_29_3))
+		Buff_Duo1[arg_29_0][arg_29_2]:GetChildChecked("Time", false):SetVal("Time", userMods.ToWString(var_29_2 .. "" .. var_29_3))
 	end
 
-	arg_29_3:AddChild(Buff[arg_29_0][arg_29_2])
-	Buff[arg_29_0][arg_29_2]:Show(true)
+	arg_29_3:AddChild(Buff_Duo1[arg_29_0][arg_29_2])
+	Buff_Duo1[arg_29_0][arg_29_2]:Show(true)
 end
 
-function CreateBuffMini(arg_30_0, arg_30_1, arg_30_2, arg_30_3)
-	if not BuffMini[arg_30_0] then
-		BuffMini[arg_30_0] = {}
+function CreateBuffMini_Duo1(arg_30_0, arg_30_1, arg_30_2, arg_30_3)
+	if not BuffMini_Duo1[arg_30_0] then
+		BuffMini_Duo1[arg_30_0] = {}
 	end
 
-	BuffMini[arg_30_0][arg_30_2] = mainForm:CreateWidgetByDesc(BuffMiniDesc)
+	BuffMini_Duo1[arg_30_0][arg_30_2] = mainForm:CreateWidgetByDesc(BuffMiniDesc_Duo1)
 
 	if arg_30_1.texture then
-		BuffMini[arg_30_0][arg_30_2]:SetBackgroundTexture(arg_30_1.texture)
+		BuffMini_Duo1[arg_30_0][arg_30_2]:SetBackgroundTexture(arg_30_1.texture)
 	end
 
-	arg_30_3:AddChild(BuffMini[arg_30_0][arg_30_2])
-	BuffMini[arg_30_0][arg_30_2]:Show(true)
+	arg_30_3:AddChild(BuffMini_Duo1[arg_30_0][arg_30_2])
+	BuffMini_Duo1[arg_30_0][arg_30_2]:Show(true)
 end
 
-function UpdateBuffStack(arg_31_0, arg_31_1, arg_31_2)
-	if Buff[arg_31_0] and Buff[arg_31_0][arg_31_1] then
+function UpdateBuffStack_Duo1(arg_31_0, arg_31_1, arg_31_2)
+	if Buff_Duo1[arg_31_0] and Buff_Duo1[arg_31_0][arg_31_1] then
 		if arg_31_2.stackCount and arg_31_2.stackCount > 1 then
-			Buff[arg_31_0][arg_31_1]:GetChildChecked("Stack", false):SetVal("Stack", common.FormatInt(arg_31_2.stackCount, "%d"))
+			Buff_Duo1[arg_31_0][arg_31_1]:GetChildChecked("Stack", false):SetVal("Stack", common.FormatInt(arg_31_2.stackCount, "%d"))
 		else
-			Buff[arg_31_0][arg_31_1]:GetChildChecked("Stack", false):ClearValues()
+			Buff_Duo1[arg_31_0][arg_31_1]:GetChildChecked("Stack", false):ClearValues()
 		end
 
 		if arg_31_2.durationMs > 0 and arg_31_2.remainingMs > 0 then
@@ -1623,21 +1623,21 @@ function UpdateBuffStack(arg_31_0, arg_31_1, arg_31_2)
 			end
 
 			if var_31_1 == true and var_31_0 <= var_0_14 then
-				Buff[arg_31_0][arg_31_1]:PlayFadeEffect(var_31_0 / var_0_14, 0, math.max(var_31_0, 1), EA_MONOTONOUS_INCREASE)
+				Buff_Duo1[arg_31_0][arg_31_1]:PlayFadeEffect(var_31_0 / var_0_14, 0, math.max(var_31_0, 1), EA_MONOTONOUS_INCREASE)
 			else
-				Buff[arg_31_0][arg_31_1]:FinishFadeEffect()
-				Buff[arg_31_0][arg_31_1]:SetFade(1)
+				Buff_Duo1[arg_31_0][arg_31_1]:FinishFadeEffect()
+				Buff_Duo1[arg_31_0][arg_31_1]:SetFade(1)
 			end
 
-			local var_31_2 = Round(var_31_0 / 1000)
+			local var_31_2 = Round_Duo1(var_31_0 / 1000)
 			local var_31_3 = var_0_18
 
 			if var_31_2 >= 60 then
-				var_31_2 = Round(var_31_2 / 60)
+				var_31_2 = Round_Duo1(var_31_2 / 60)
 				var_31_3 = var_0_19
 
 				if var_31_2 >= 60 then
-					var_31_2 = Round(var_31_2 / 60)
+					var_31_2 = Round_Duo1(var_31_2 / 60)
 					var_31_3 = var_0_20
 				end
 			end
@@ -1648,13 +1648,13 @@ function UpdateBuffStack(arg_31_0, arg_31_1, arg_31_2)
 
 			var_0_21[arg_31_0][arg_31_1] = true
 
-			Buff[arg_31_0][arg_31_1]:GetChildChecked("Time", false):SetVal("Time", userMods.ToWString(var_31_2 .. "" .. var_31_3))
+			Buff_Duo1[arg_31_0][arg_31_1]:GetChildChecked("Time", false):SetVal("Time", userMods.ToWString(var_31_2 .. "" .. var_31_3))
 		end
 	end
 end
 
-function ExistCheck(arg_32_0)
-	for iter_32_0, iter_32_1 in pairs(Buff[arg_32_0.objectId]) do
+function ExistCheck_Duo1(arg_32_0)
+	for iter_32_0, iter_32_1 in pairs(Buff_Duo1[arg_32_0.objectId]) do
 		local var_32_0 = true
 
 		for iter_32_2, iter_32_3 in pairs(object.GetBuffs(arg_32_0.objectId)) do
@@ -1666,21 +1666,21 @@ function ExistCheck(arg_32_0)
 		end
 
 		if var_32_0 == true then
-			Buff[arg_32_0.objectId][iter_32_0]:DestroyWidget()
+			Buff_Duo1[arg_32_0.objectId][iter_32_0]:DestroyWidget()
 
-			Buff[arg_32_0.objectId][iter_32_0] = nil
+			Buff_Duo1[arg_32_0.objectId][iter_32_0] = nil
 
-			if BuffMini[arg_32_0.objectId] and BuffMini[arg_32_0.objectId][iter_32_0] then
-				BuffMini[arg_32_0.objectId][iter_32_0]:DestroyWidget()
+			if BuffMini_Duo1[arg_32_0.objectId] and BuffMini_Duo1[arg_32_0.objectId][iter_32_0] then
+				BuffMini_Duo1[arg_32_0.objectId][iter_32_0]:DestroyWidget()
 
-				BuffMini[arg_32_0.objectId][iter_32_0] = nil
+				BuffMini_Duo1[arg_32_0.objectId][iter_32_0] = nil
 			end
 
 			if var_0_21[arg_32_0.objectId] and var_0_21[arg_32_0.objectId][iter_32_0] then
 				var_0_21[arg_32_0.objectId][iter_32_0] = nil
 			end
 		else
-			eventBuffsElementChanged({
+			eventBuffsElementChanged_Duo1({
 				objects = {
 					[arg_32_0.objectId] = {
 						[iter_32_0] = true
@@ -1691,17 +1691,17 @@ function ExistCheck(arg_32_0)
 	end
 end
 
-function SortBuffs(arg_33_0)
-	if widgets[arg_33_0] and Buff[arg_33_0] then
+function SortBuffs_Duo1(arg_33_0)
+	if widgets_Duo1[arg_33_0] and Buff_Duo1[arg_33_0] then
 		local var_33_0 = 0
 
-		for iter_33_0, iter_33_1 in pairs(Buff[arg_33_0]) do
+		for iter_33_0, iter_33_1 in pairs(Buff_Duo1[arg_33_0]) do
 			if iter_33_1 and iter_33_1:IsVisible() then
-				MoveWidget(iter_33_1, {
+				MoveWidget_Duo1(iter_33_1, {
 					posY = 10,
 					posX = 40 * var_33_0
 				})
-				MoveWidget(widgets[arg_33_0], {
+				MoveWidget_Duo1(widgets_Duo1[arg_33_0], {
 					sizeX = 40 * (var_33_0 + 1)
 				})
 
@@ -1716,20 +1716,20 @@ function SortBuffs(arg_33_0)
 		var_33_1 = var_0_24.multiIconSize
 	end
 
-	if widgetsMini[arg_33_0] and BuffMini[arg_33_0] then
+	if widgetsMini_Duo1[arg_33_0] and BuffMini_Duo1[arg_33_0] then
 		local var_33_2 = 0
 
-		for iter_33_2, iter_33_3 in pairs(BuffMini[arg_33_0]) do
+		for iter_33_2, iter_33_3 in pairs(BuffMini_Duo1[arg_33_0]) do
 			if iter_33_3 and iter_33_3:IsVisible() then
 				if var_33_1 * (var_33_2 + 1) < var_0_22 - 20 then
-					MoveWidget(iter_33_3, {
+					MoveWidget_Duo1(iter_33_3, {
 						highPosY = 1,
 						highPosX = var_33_1 * var_33_2,
 						sizeX = var_33_1,
 						sizeY = var_33_1
 					})
 				else
-					MoveWidget(iter_33_3, {
+					MoveWidget_Duo1(iter_33_3, {
 						highPosY = 1,
 						highPosX = -2 - var_33_1
 					})
@@ -1741,7 +1741,7 @@ function SortBuffs(arg_33_0)
 	end
 end
 
-function eventBuffsAdded(arg_34_0)
+function eventBuffsAdded_Duo1(arg_34_0)
 	local var_34_0 = object.GetBuffInfo(arg_34_0.buffId)
 
 	if arg_34_0.objectId and object.IsExist(arg_34_0.objectId) and object.IsUnit(arg_34_0.objectId) and var_34_0 and var_34_0.isNeedVisualize and var_34_0.texture then
@@ -1755,12 +1755,12 @@ function eventBuffsAdded(arg_34_0)
 				var_34_1 = var_0_29[userMods.FromWString(var_34_0.name)]
 			end
 
-			if (var_34_1 or var_0_24.show_ownbuffs == true and var_34_0.producer.casterId and (var_34_0.producer.casterId == var_34_2 or unit.GetActivePet(var_34_2) and var_34_0.producer.casterId == unit.GetActivePet(var_34_2))) and widgets[arg_34_0.objectId] and widgetsMini[arg_34_0.objectId] then
-				CreateBuff(arg_34_0.objectId, var_34_0, arg_34_0.buffId, widgets[arg_34_0.objectId])
-				CreateBuffMini(arg_34_0.objectId, var_34_0, arg_34_0.buffId, widgetsMini[arg_34_0.objectId])
-				SortBuffs(arg_34_0.objectId)
+			if (var_34_1 or var_0_24.show_ownbuffs == true and var_34_0.producer.casterId and (var_34_0.producer.casterId == var_34_2 or unit.GetActivePet(var_34_2) and var_34_0.producer.casterId == unit.GetActivePet(var_34_2))) and widgets_Duo1[arg_34_0.objectId] and widgetsMini_Duo1[arg_34_0.objectId] then
+				CreateBuff_Duo1(arg_34_0.objectId, var_34_0, arg_34_0.buffId, widgets_Duo1[arg_34_0.objectId])
+				CreateBuffMini_Duo1(arg_34_0.objectId, var_34_0, arg_34_0.buffId, widgetsMini_Duo1[arg_34_0.objectId])
+				SortBuffs_Duo1(arg_34_0.objectId)
 
-				if var_34_1 and not var_34_1.icon and OptionsNew:IsVisible() ~= true then
+				if var_34_1 and not var_34_1.icon and OptionsNew_Duo1:IsVisible() ~= true then
 					var_34_1.icon = var_34_0.buffId
 
 					if var_0_28[var_34_1.id] then
@@ -1775,12 +1775,12 @@ function eventBuffsAdded(arg_34_0)
 			local var_34_4 = avatar.GetId()
 			local var_34_5 = var_0_30[userMods.FromWString(var_34_0.name)]
 
-			if (var_34_5 or var_0_24.show_ownbuffs == true and var_34_0.producer.casterId and (var_34_0.producer.casterId == var_34_4 or unit.GetActivePet(var_34_4) and var_34_0.producer.casterId == unit.GetActivePet(var_34_4))) and widgets[arg_34_0.objectId] and widgetsMini[arg_34_0.objectId] then
-				CreateBuff(arg_34_0.objectId, var_34_0, arg_34_0.buffId, widgets[arg_34_0.objectId])
-				CreateBuffMini(arg_34_0.objectId, var_34_0, arg_34_0.buffId, widgetsMini[arg_34_0.objectId])
-				SortBuffs(arg_34_0.objectId)
+			if (var_34_5 or var_0_24.show_ownbuffs == true and var_34_0.producer.casterId and (var_34_0.producer.casterId == var_34_4 or unit.GetActivePet(var_34_4) and var_34_0.producer.casterId == unit.GetActivePet(var_34_4))) and widgets_Duo1[arg_34_0.objectId] and widgetsMini_Duo1[arg_34_0.objectId] then
+				CreateBuff_Duo1(arg_34_0.objectId, var_34_0, arg_34_0.buffId, widgets_Duo1[arg_34_0.objectId])
+				CreateBuffMini_Duo1(arg_34_0.objectId, var_34_0, arg_34_0.buffId, widgetsMini_Duo1[arg_34_0.objectId])
+				SortBuffs_Duo1(arg_34_0.objectId)
 
-				if var_34_5 and not var_34_5.icon and OptionsNew:IsVisible() ~= true then
+				if var_34_5 and not var_34_5.icon and OptionsNew_Duo1:IsVisible() ~= true then
 					var_34_5.icon = var_34_0.buffId
 
 					if var_0_28[var_34_5.id] then
@@ -1794,15 +1794,15 @@ function eventBuffsAdded(arg_34_0)
 	end
 end
 
-function eventBuffsElementChanged(arg_35_0)
+function eventBuffsElementChanged_Duo1(arg_35_0)
 	for iter_35_0, iter_35_1 in pairs(arg_35_0.objects) do
-		if object.IsExist(iter_35_0) and object.IsUnit(iter_35_0) and Buff[iter_35_0] then
+		if object.IsExist(iter_35_0) and object.IsUnit(iter_35_0) and Buff_Duo1[iter_35_0] then
 			for iter_35_2, iter_35_3 in pairs(iter_35_1) do
-				if Buff[iter_35_0][iter_35_2] then
+				if Buff_Duo1[iter_35_0][iter_35_2] then
 					local var_35_0 = object.GetBuffInfo(iter_35_2)
 
 					if var_35_0 then
-						UpdateBuffStack(iter_35_0, iter_35_2, var_35_0)
+						UpdateBuffStack_Duo1(iter_35_0, iter_35_2, var_35_0)
 					end
 				end
 			end
@@ -1810,17 +1810,17 @@ function eventBuffsElementChanged(arg_35_0)
 	end
 end
 
-function eventBuffsChanged(arg_36_0)
-	if object.IsExist(arg_36_0.objectId) and object.IsUnit(arg_36_0.objectId) and Buff[arg_36_0.objectId] then
-		ExistCheck(arg_36_0)
-		SortBuffs(arg_36_0.objectId)
+function eventBuffsChanged_Duo1(arg_36_0)
+	if object.IsExist(arg_36_0.objectId) and object.IsUnit(arg_36_0.objectId) and Buff_Duo1[arg_36_0.objectId] then
+		ExistCheck_Duo1(arg_36_0)
+		SortBuffs_Duo1(arg_36_0.objectId)
 	end
 end
 
-function eventSecondTimer()
+function eventSecondTimer_Duo1()
 	for iter_37_0, iter_37_1 in pairs(var_0_21) do
 		for iter_37_2, iter_37_3 in pairs(iter_37_1) do
-			if Buff[iter_37_0] and Buff[iter_37_0][iter_37_2] then
+			if Buff_Duo1[iter_37_0] and Buff_Duo1[iter_37_0][iter_37_2] then
 				local var_37_0
 
 				for iter_37_4, iter_37_5 in pairs(object.GetBuffs(iter_37_0)) do
@@ -1838,55 +1838,55 @@ function eventSecondTimer()
 					end
 
 					if var_37_2 == true and var_37_1 <= var_0_14 then
-						local var_37_3 = Buff[iter_37_0][iter_37_2]:GetFade()
+						local var_37_3 = Buff_Duo1[iter_37_0][iter_37_2]:GetFade()
 
-						Buff[iter_37_0][iter_37_2]:PlayFadeEffect(var_37_3, 0, math.max(var_37_1, 1), EA_MONOTONOUS_INCREASE)
+						Buff_Duo1[iter_37_0][iter_37_2]:PlayFadeEffect(var_37_3, 0, math.max(var_37_1, 1), EA_MONOTONOUS_INCREASE)
 					else
-						Buff[iter_37_0][iter_37_2]:FinishFadeEffect()
-						Buff[iter_37_0][iter_37_2]:SetFade(1)
+						Buff_Duo1[iter_37_0][iter_37_2]:FinishFadeEffect()
+						Buff_Duo1[iter_37_0][iter_37_2]:SetFade(1)
 					end
 
-					local var_37_4 = Round(var_37_1 / 1000)
+					local var_37_4 = Round_Duo1(var_37_1 / 1000)
 					local var_37_5 = var_0_18
 
 					if var_37_4 >= 60 then
-						var_37_4 = Round(var_37_4 / 60)
+						var_37_4 = Round_Duo1(var_37_4 / 60)
 						var_37_5 = var_0_19
 
 						if var_37_4 >= 60 then
-							var_37_4 = Round(var_37_4 / 60)
+							var_37_4 = Round_Duo1(var_37_4 / 60)
 							var_37_5 = var_0_20
 						end
 					end
 
 					var_0_21[iter_37_0][iter_37_2] = true
 
-					Buff[iter_37_0][iter_37_2]:GetChildChecked("Time", false):SetVal("Time", userMods.ToWString(var_37_4 .. "" .. var_37_5))
+					Buff_Duo1[iter_37_0][iter_37_2]:GetChildChecked("Time", false):SetVal("Time", userMods.ToWString(var_37_4 .. "" .. var_37_5))
 				end
 			end
 		end
 	end
 
 	if var_0_26 then
-		CollectUnits()
+		CollectUnits_Duo1()
 
 		var_0_26 = nil
 	end
 end
 
-function PanelkaDNDOnPointing(arg_38_0)
-	local var_38_0 = FadePanel:GetFade()
+function PanelkaDNDOnPointing_Duo1(arg_38_0)
+	local var_38_0 = FadePanel_Duo1:GetFade()
 
-	FadePanel:FinishFadeEffect()
+	FadePanel_Duo1:FinishFadeEffect()
 
 	if arg_38_0.active then
-		FadePanel:PlayFadeEffect(var_38_0, 0.5, 50, EA_MONOTONOUS_INCREASE)
+		FadePanel_Duo1:PlayFadeEffect(var_38_0, 0.5, 50, EA_MONOTONOUS_INCREASE)
 	else
-		FadePanel:PlayFadeEffect(var_38_0, 0, 350, EA_MONOTONOUS_INCREASE)
+		FadePanel_Duo1:PlayFadeEffect(var_38_0, 0, 350, EA_MONOTONOUS_INCREASE)
 	end
 end
 
-function OnPanelkaCheckbox(arg_39_0)
+function OnPanelkaCheckbox_Duo1(arg_39_0)
 	if arg_39_0.widget:GetVariant() == 0 then
 		arg_39_0.widget:SetVariant(1)
 
@@ -1898,75 +1898,75 @@ function OnPanelkaCheckbox(arg_39_0)
 	end
 
 	SetConfig("config", var_0_24)
-	UnregisterAndClear()
-	RegisterAndCreate()
+	UnregisterAndClear_Duo1()
+	RegisterAndCreate_Duo1()
 end
 
-function UnregisterAndClear()
+function UnregisterAndClear_Duo1()
 	var_0_7 = true
 
 	if var_0_8 then
-		common.UnRegisterEventHandler(eventBuffsElementChanged, "EVENT_OBJECT_BUFFS_ELEMENT_CHANGED")
+		common.UnRegisterEventHandler(eventBuffsElementChanged_Duo1, "EVENT_OBJECT_BUFFS_ELEMENT_CHANGED")
 
 		var_0_8 = nil
 	end
 
 	for iter_40_0, iter_40_1 in pairs(var_0_6) do
 		if var_0_6[iter_40_0] then
-			common.UnRegisterEventHandler(eventBuffsChanged, "EVENT_OBJECT_BUFFS_CHANGED", var_0_6[iter_40_0])
-			common.UnRegisterEventHandler(eventBuffsAdded, "EVENT_OBJECT_BUFF_ADDED", var_0_6[iter_40_0])
+			common.UnRegisterEventHandler(eventBuffsChanged_Duo1, "EVENT_OBJECT_BUFFS_CHANGED", var_0_6[iter_40_0])
+			common.UnRegisterEventHandler(eventBuffsAdded_Duo1, "EVENT_OBJECT_BUFF_ADDED", var_0_6[iter_40_0])
 		end
 	end
 
 	var_0_6 = {}
 	var_0_21 = {}
 
-	for iter_40_2, iter_40_3 in pairs(Buff) do
+	for iter_40_2, iter_40_3 in pairs(Buff_Duo1) do
 		for iter_40_4, iter_40_5 in pairs(iter_40_3) do
-			if Buff[iter_40_2] and Buff[iter_40_2][iter_40_4] then
-				Buff[iter_40_2][iter_40_4]:DestroyWidget()
+			if Buff_Duo1[iter_40_2] and Buff_Duo1[iter_40_2][iter_40_4] then
+				Buff_Duo1[iter_40_2][iter_40_4]:DestroyWidget()
 
-				Buff[iter_40_2][iter_40_4] = nil
+				Buff_Duo1[iter_40_2][iter_40_4] = nil
 			end
 		end
 
-		Buff[iter_40_2] = nil
+		Buff_Duo1[iter_40_2] = nil
 	end
 
-	Buff = {}
+	Buff_Duo1 = {}
 
-	for iter_40_6, iter_40_7 in pairs(BuffMini) do
+	for iter_40_6, iter_40_7 in pairs(BuffMini_Duo1) do
 		for iter_40_8, iter_40_9 in pairs(iter_40_7) do
-			if BuffMini[iter_40_6] and BuffMini[iter_40_6][iter_40_8] then
-				BuffMini[iter_40_6][iter_40_8]:DestroyWidget()
+			if BuffMini_Duo1[iter_40_6] and BuffMini_Duo1[iter_40_6][iter_40_8] then
+				BuffMini_Duo1[iter_40_6][iter_40_8]:DestroyWidget()
 
-				BuffMini[iter_40_6][iter_40_8] = nil
+				BuffMini_Duo1[iter_40_6][iter_40_8] = nil
 			end
 		end
 
-		BuffMini[iter_40_6] = nil
+		BuffMini_Duo1[iter_40_6] = nil
 	end
 
-	BuffMini = {}
+	BuffMini_Duo1 = {}
 end
 
-function RegisterAndCreate()
+function RegisterAndCreate_Duo1()
 	if var_0_24.disable_buffs == false then
 		for iter_41_0, iter_41_1 in pairs(avatar.GetUnitList()) do
 			if iter_41_1 and object.IsExist(iter_41_1) and object.IsUnit(iter_41_1) then
-				StartUpAddBuff(iter_41_1)
+				StartUpAddBuff_Duo1(iter_41_1)
 			end
 
 			var_0_6[iter_41_1] = {
 				objectId = iter_41_1
 			}
 
-			common.RegisterEventHandler(eventBuffsChanged, "EVENT_OBJECT_BUFFS_CHANGED", var_0_6[iter_41_1])
-			common.RegisterEventHandler(eventBuffsAdded, "EVENT_OBJECT_BUFF_ADDED", var_0_6[iter_41_1])
+			common.RegisterEventHandler(eventBuffsChanged_Duo1, "EVENT_OBJECT_BUFFS_CHANGED", var_0_6[iter_41_1])
+			common.RegisterEventHandler(eventBuffsAdded_Duo1, "EVENT_OBJECT_BUFF_ADDED", var_0_6[iter_41_1])
 		end
 
 		if var_0_8 == nil then
-			common.RegisterEventHandler(eventBuffsElementChanged, "EVENT_OBJECT_BUFFS_ELEMENT_CHANGED")
+			common.RegisterEventHandler(eventBuffsElementChanged_Duo1, "EVENT_OBJECT_BUFFS_ELEMENT_CHANGED")
 
 			var_0_8 = true
 		end
@@ -1975,30 +1975,30 @@ function RegisterAndCreate()
 	var_0_7 = false
 end
 
-function RezhimColor()
+function RezhimColor_Duo1()
 	if var_0_24.Rezhim == 1 then
-		PanelkaDND:SetBackgroundColor({
+		PanelkaDND_Duo1:SetBackgroundColor({
 			g = 0,
 			a = 0.5,
 			b = 0,
 			r = 1
 		})
 	elseif var_0_24.Rezhim == 2 then
-		PanelkaDND:SetBackgroundColor({
+		PanelkaDND_Duo1:SetBackgroundColor({
 			g = 0,
 			a = 0.5,
 			b = 1,
 			r = 0
 		})
 	elseif var_0_24.Rezhim == 3 then
-		PanelkaDND:SetBackgroundColor({
+		PanelkaDND_Duo1:SetBackgroundColor({
 			g = 1,
 			a = 0.5,
 			b = 0,
 			r = 1
 		})
 	elseif var_0_24.Rezhim == 4 then
-		PanelkaDND:SetBackgroundColor({
+		PanelkaDND_Duo1:SetBackgroundColor({
 			g = 0,
 			a = 0.5,
 			b = 0,
@@ -2007,11 +2007,11 @@ function RezhimColor()
 	end
 end
 
-function OnXBtnReaction(arg_43_0)
-	ClosePanelka()
+function OnXBtnReaction_Duo1(arg_43_0)
+	ClosePanelka_Duo1()
 end
 
-function OnPageBuffsCheckBoxClick(arg_44_0)
+function OnPageBuffsCheckBoxClick_Duo1(arg_44_0)
 	local var_44_0 = true
 
 	if arg_44_0.widget:GetVariant() == 0 then
@@ -2034,61 +2034,61 @@ function OnPageBuffsCheckBoxClick(arg_44_0)
 	arg_44_0.widget:SetFocus(true)
 end
 
-function RepaintContainer()
-	PageBuffsContainer:RemoveItems()
+function RepaintContainer_Duo1()
+	PageBuffsContainer_Duo1:RemoveItems()
 
-	for iter_45_0, iter_45_1 in pairs(PageBuffsItems) do
-		PageBuffsItems[iter_45_0]:DestroyWidget()
+	for iter_45_0, iter_45_1 in pairs(PageBuffsItems_Duo1) do
+		PageBuffsItems_Duo1[iter_45_0]:DestroyWidget()
 
-		PageBuffsItems[iter_45_0] = nil
+		PageBuffsItems_Duo1[iter_45_0] = nil
 	end
 
-	PageBuffsItems = {}
+	PageBuffsItems_Duo1 = {}
 
-	if OptionsNew:IsVisible() == true and GetTableSize(var_0_28) > 0 then
-		for iter_45_2 = 1, GetTableSize(var_0_28) do
-			PageBuffsItems[iter_45_2] = mainForm:CreateWidgetByDesc(PageBuffsItemDesc)
+	if OptionsNew_Duo1:IsVisible() == true and GetTableSize_Duo1(var_0_28) > 0 then
+		for iter_45_2 = 1, GetTableSize_Duo1(var_0_28) do
+			PageBuffsItems_Duo1[iter_45_2] = mainForm:CreateWidgetByDesc(PageBuffsItemDesc_Duo1)
 
-			PageBuffsItems[iter_45_2]:GetChildChecked("Text", false):SetVal("text", userMods.ToWString(var_0_28[iter_45_2].name))
-			PageBuffsItems[iter_45_2]:SetName("Items_" .. iter_45_2)
+			PageBuffsItems_Duo1[iter_45_2]:GetChildChecked("Text", false):SetVal("text", userMods.ToWString(var_0_28[iter_45_2].name))
+			PageBuffsItems_Duo1[iter_45_2]:SetName("Items_" .. iter_45_2)
 
 			if var_0_28[iter_45_2].onUnits == true then
-				PageBuffsItems[iter_45_2]:GetChildChecked("CBUnit", false):SetVariant(1)
+				PageBuffsItems_Duo1[iter_45_2]:GetChildChecked("CBUnit", false):SetVariant(1)
 			else
-				PageBuffsItems[iter_45_2]:GetChildChecked("CBUnit", false):SetVariant(0)
+				PageBuffsItems_Duo1[iter_45_2]:GetChildChecked("CBUnit", false):SetVariant(0)
 			end
 
 			if var_0_28[iter_45_2].onMobs == true then
-				PageBuffsItems[iter_45_2]:GetChildChecked("CBMobs", false):SetVariant(1)
+				PageBuffsItems_Duo1[iter_45_2]:GetChildChecked("CBMobs", false):SetVariant(1)
 			else
-				PageBuffsItems[iter_45_2]:GetChildChecked("CBMobs", false):SetVariant(0)
+				PageBuffsItems_Duo1[iter_45_2]:GetChildChecked("CBMobs", false):SetVariant(0)
 			end
 
 			if var_0_28[iter_45_2].icon and common.GetApiType(var_0_28[iter_45_2].icon) == "BuffId" then
 				local var_45_0 = object.GetBuffInfo(var_0_28[iter_45_2].icon)
 
 				if var_45_0.texture then
-					PageBuffsItems[iter_45_2]:GetChildChecked("Icon", false):SetBackgroundTexture(var_45_0.texture)
+					PageBuffsItems_Duo1[iter_45_2]:GetChildChecked("Icon", false):SetBackgroundTexture(var_45_0.texture)
 				else
-					PageBuffsItems[iter_45_2]:GetChildChecked("Icon", false):SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Icons", "UnknownBuff"))
+					PageBuffsItems_Duo1[iter_45_2]:GetChildChecked("Icon", false):SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Icons", "UnknownBuff"))
 				end
 			else
 				var_0_28[iter_45_2].icon = nil
 
-				PageBuffsItems[iter_45_2]:GetChildChecked("Icon", false):SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Icons", "UnknownBuff"))
+				PageBuffsItems_Duo1[iter_45_2]:GetChildChecked("Icon", false):SetBackgroundTexture(common.GetAddonRelatedGroupTexture("Icons", "UnknownBuff"))
 			end
 
-			PageBuffsItems[iter_45_2]:Show(true)
-			PageBuffsContainer:PushBack(PageBuffsItems[iter_45_2])
+			PageBuffsItems_Duo1[iter_45_2]:Show(true)
+			PageBuffsContainer_Duo1:PushBack(PageBuffsItems_Duo1[iter_45_2])
 		end
 	end
 end
 
-function ButtonEditClick(arg_46_0)
+function ButtonEditClick_Duo1(arg_46_0)
 	local var_46_0 = arg_46_0.widget:GetParent()
 	local var_46_1 = tonumber(string.sub(var_46_0:GetName(), 7))
 
-	for iter_46_0, iter_46_1 in pairs(PageBuffsItems) do
+	for iter_46_0, iter_46_1 in pairs(PageBuffsItems_Duo1) do
 		iter_46_1:GetChildChecked("EditLine", false):Show(false)
 		iter_46_1:GetChildChecked("EditLine", false):Enable(false)
 		iter_46_1:GetChildChecked("Text", false):Show(true)
@@ -2103,7 +2103,7 @@ function ButtonEditClick(arg_46_0)
 	var_46_0:GetChildChecked("EditLine", false):SetFocus(true)
 end
 
-function RenameCancelReaction(arg_47_0)
+function RenameCancelReaction_Duo1(arg_47_0)
 	local var_47_0 = arg_47_0.widget:GetParent()
 	local var_47_1 = tonumber(string.sub(var_47_0:GetName(), 7))
 
@@ -2118,7 +2118,7 @@ function RenameCancelReaction(arg_47_0)
 	end
 end
 
-function RenameBuildReaction(arg_48_0)
+function RenameBuildReaction_Duo1(arg_48_0)
 	local var_48_0 = arg_48_0.widget:GetParent()
 	local var_48_1 = tonumber(string.sub(var_48_0:GetName(), 7))
 
@@ -2146,50 +2146,50 @@ function RenameBuildReaction(arg_48_0)
 	var_48_0:GetChildChecked("Text", false):Show(true)
 end
 
-function RenameFocusChanged(arg_49_0)
+function RenameFocusChanged_Duo1(arg_49_0)
 	if arg_49_0.widget:IsFocused() ~= true then
-		RenameBuildReaction(arg_49_0)
+		RenameBuildReaction_Duo1(arg_49_0)
 	end
 end
 
-function ButtonDeleteClick(arg_50_0)
-	local var_50_0 = PageBuffsContainer:GetContainerOffset()
+function ButtonDeleteClick_Duo1(arg_50_0)
+	local var_50_0 = PageBuffsContainer_Duo1:GetContainerOffset()
 	local var_50_1 = arg_50_0.widget:GetParent()
 	local var_50_2 = tonumber(string.sub(var_50_1:GetName(), 7))
 
-	if var_50_2 < GetTableSize(var_0_28) then
-		for iter_50_0 = var_50_2, GetTableSize(var_0_28) - 1 do
+	if var_50_2 < GetTableSize_Duo1(var_0_28) then
+		for iter_50_0 = var_50_2, GetTableSize_Duo1(var_0_28) - 1 do
 			var_0_28[iter_50_0] = var_0_28[iter_50_0 + 1]
 		end
 	end
 
-	var_0_28[GetTableSize(var_0_28)] = nil
+	var_0_28[GetTableSize_Duo1(var_0_28)] = nil
 
-	RepaintContainer()
-	PageBuffsContainer:SetContainerOffset(var_50_0)
+	RepaintContainer_Duo1()
+	PageBuffsContainer_Duo1:SetContainerOffset(var_50_0)
 end
 
-function NewItem()
+function NewItem_Duo1()
 	if var_0_27 == true then
-		var_0_28[GetTableSize(var_0_28) + 1] = {
+		var_0_28[GetTableSize_Duo1(var_0_28) + 1] = {
 			onUnits = false,
 			onMobs = false,
 			name = "\xCD\xEE\xE2\xFB\xE9 \xE1\xE0\xF4\xF4 " .. common.GetRandInt(1000, 9999)
 		}
 
-		RepaintContainer()
-		PageBuffsContainer:ForceReposition()
-		PageBuffsContainer:SetContainerOffset(PageBuffsContainer:GetMaxContainerOffset())
+		RepaintContainer_Duo1()
+		PageBuffsContainer_Duo1:ForceReposition()
+		PageBuffsContainer_Duo1:SetContainerOffset(PageBuffsContainer_Duo1:GetMaxContainerOffset())
 
 		local var_51_0 = {
-			widget = PageBuffsItems[GetTableSize(var_0_28)]:GetChildChecked("ButtonEdit", false)
+			widget_Duo1 = PageBuffsItems_Duo1[GetTableSize_Duo1(var_0_28)]:GetChildChecked("ButtonEdit", false)
 		}
 
-		ButtonEditClick(var_51_0)
+		ButtonEditClick_Duo1(var_51_0)
 	end
 end
 
-function MovePage(arg_52_0, arg_52_1)
+function MovePage_Duo1(arg_52_0, arg_52_1)
 	local var_52_0 = 200
 	local var_52_1 = arg_52_0:GetPlacementPlain()
 	local var_52_2 = arg_52_0:GetPlacementPlain()
@@ -2201,78 +2201,78 @@ function MovePage(arg_52_0, arg_52_1)
 	arg_52_0:PlayMoveEffect(var_52_1, var_52_2, var_52_0, EA_MONOTONOUS_INCREASE)
 end
 
-function OnSelectPage(arg_53_0)
+function OnSelectPage_Duo1(arg_53_0)
 	if arg_53_0.sender == "Page1" then
-		MovePage(PageBuffs, {
+		MovePage_Duo1(PageBuffs_Duo1, {
 			posX = 0
 		})
-		MovePage(PageOpts, {
+		MovePage_Duo1(PageOpts_Duo1, {
 			posX = 680
 		})
-		MovePage(PageMark, {
+		MovePage_Duo1(PageMark_Duo1, {
 			posX = 1360
 		})
-		MovePage(FabButton, {
+		MovePage_Duo1(FabButton_Duo1, {
 			posY = 64
 		})
 
 		var_0_27 = true
 
-		FabButton:FinishFadeEffect()
-		FabButton:PlayFadeEffect(FabButton:GetFade(), 1, 200, EA_MONOTONOUS_INCREASE)
-		MovePage(PageSelector, {
+		FabButton_Duo1:FinishFadeEffect()
+		FabButton_Duo1:PlayFadeEffect(FabButton_Duo1:GetFade(), 1, 200, EA_MONOTONOUS_INCREASE)
+		MovePage_Duo1(PageSelector_Duo1, {
 			posX = 0
 		})
 	elseif arg_53_0.sender == "Page2" then
-		MovePage(PageBuffs, {
+		MovePage_Duo1(PageBuffs_Duo1, {
 			posX = -680
 		})
-		MovePage(PageOpts, {
+		MovePage_Duo1(PageOpts_Duo1, {
 			posX = 0
 		})
-		MovePage(PageMark, {
+		MovePage_Duo1(PageMark_Duo1, {
 			posX = 680
 		})
-		MovePage(FabButton, {
+		MovePage_Duo1(FabButton_Duo1, {
 			posY = 0
 		})
 
 		var_0_27 = false
 
-		FabButton:FinishFadeEffect()
-		FabButton:PlayFadeEffect(FabButton:GetFade(), 0, 200, EA_MONOTONOUS_INCREASE)
-		MovePage(PageSelector, {
+		FabButton_Duo1:FinishFadeEffect()
+		FabButton_Duo1:PlayFadeEffect(FabButton_Duo1:GetFade(), 0, 200, EA_MONOTONOUS_INCREASE)
+		MovePage_Duo1(PageSelector_Duo1, {
 			posX = 150
 		})
 	elseif arg_53_0.sender == "Page3" then
-		MovePage(PageBuffs, {
+		MovePage_Duo1(PageBuffs_Duo1, {
 			posX = -1360
 		})
-		MovePage(PageOpts, {
+		MovePage_Duo1(PageOpts_Duo1, {
 			posX = -680
 		})
-		MovePage(PageMark, {
+		MovePage_Duo1(PageMark_Duo1, {
 			posX = 0
 		})
-		MovePage(FabButton, {
+		MovePage_Duo1(FabButton_Duo1, {
 			posY = 0
 		})
 
 		var_0_27 = false
 
-		FabButton:FinishFadeEffect()
-		FabButton:PlayFadeEffect(FabButton:GetFade(), 0, 200, EA_MONOTONOUS_INCREASE)
-		MovePage(PageSelector, {
+		FabButton_Duo1:FinishFadeEffect()
+		FabButton_Duo1:PlayFadeEffect(FabButton_Duo1:GetFade(), 0, 200, EA_MONOTONOUS_INCREASE)
+		MovePage_Duo1(PageSelector_Duo1, {
 			posX = 300
 		})
 	end
 end
 
-function OnRBtnReaction(arg_54_0)
-	local var_54_0 = not OptionsNew:IsVisible()
+function OnRBtnReaction_Duo1(arg_54_0)
+	local var_54_0 = not OptionsNew_Duo1:IsVisible()
 
-	OptionsNew:Show(var_54_0)
-	RepaintContainer()
+	OptionsNew_Duo1:Show(var_54_0)
+	RepaintContainer_Duo1()
 
 	if var_54_0 ~= true then
 		var_0_29 = nil
@@ -2294,36 +2294,36 @@ function OnRBtnReaction(arg_54_0)
 			end
 		end
 
-		if FlagMark:GetVariant() == 1 then
+		if FlagMark_Duo1:GetVariant() == 1 then
 			var_0_24.show_mark = true
 		else
 			var_0_24.show_mark = false
 		end
 
-		UnregisterAndClear()
-		RegisterAndCreate()
-		eventAvatarTargetChanged()
+		UnregisterAndClear_Duo1()
+		RegisterAndCreate_Duo1()
+		eventAvatarTargetChanged_Duo1()
 		SetConfig("config", var_0_24)
 		SetConfig("DataBase70", var_0_28)
 	else
 		if var_0_24.show_mark == true then
-			FlagMark:SetVariant(1)
+			FlagMark_Duo1:SetVariant(1)
 		else
-			FlagMark:SetVariant(0)
+			FlagMark_Duo1:SetVariant(0)
 		end
 
-		for iter_54_2, iter_54_3 in pairs(ContainerItems) do
+		for iter_54_2, iter_54_3 in pairs(ContainerItems_Duo1) do
 			iter_54_3:SetVariant(0)
 
 			if iter_54_2 == var_0_24.current_target then
 				iter_54_3:SetVariant(1)
-				SetPreview(iter_54_2)
+				SetPreview_Duo1(iter_54_2)
 			end
 		end
 	end
 end
 
-function OnSBtnReaction(arg_55_0)
+function OnSBtnReaction_Duo1(arg_55_0)
 	var_0_1:Show(false)
 
 	if var_0_24.multi_columns == false then
@@ -2332,13 +2332,13 @@ function OnSBtnReaction(arg_55_0)
 		var_0_24.multi_columns = false
 	end
 
-	UpdateUnitBarXY()
+	UpdateUnitBarXY_Duo1()
 	SetConfig("config", var_0_24)
-	PrepareList()
-	CollectUnits()
+	PrepareList_Duo1()
+	CollectUnits_Duo1()
 end
 
-function UpdateUnitBarXY()
+function UpdateUnitBarXY_Duo1()
 	if var_0_24.multi_columns == false then
 		var_0_22 = var_0_24.singleBarX
 		var_0_23 = var_0_24.singleBarY
@@ -2348,37 +2348,37 @@ function UpdateUnitBarXY()
 	end
 end
 
-function OnMBtnReaction(arg_57_0)
-	if SelectMode:IsVisible() then
-		SelectMode:Show(false)
+function OnMBtnReaction_Duo1(arg_57_0)
+	if SelectMode_Duo1:IsVisible() then
+		SelectMode_Duo1:Show(false)
 	else
-		local var_57_0 = MainPanel:GetPlacementPlain()
+		local var_57_0 = MainPanel_Duo1:GetPlacementPlain()
 
-		MoveWidget(SelectMode, {
+		MoveWidget_Duo1(SelectMode_Duo1, {
 			posX = var_57_0.posX - 85,
 			posY = var_57_0.posY + 25
 		})
-		SelectMode:Show(true)
+		SelectMode_Duo1:Show(true)
 	end
 end
 
-function OnSelectMode(arg_58_0)
+function OnSelectMode_Duo1(arg_58_0)
 	local var_58_0 = tonumber(string.sub(arg_58_0.widget:GetName(), 7))
 
-	UnregisterAndClear()
+	UnregisterAndClear_Duo1()
 	var_0_1:Show(false)
 
 	var_0_24.Rezhim = var_58_0
 
-	RezhimColor()
+	RezhimColor_Duo1()
 	SetConfig("config", var_0_24)
-	RegisterAndCreate()
-	PrepareList()
-	CollectUnits()
-	SelectMode:Show(false)
+	RegisterAndCreate_Duo1()
+	PrepareList_Duo1()
+	CollectUnits_Duo1()
+	SelectMode_Duo1:Show(false)
 end
 
-function SetOptionWidget(arg_59_0)
+function SetOptionWidget_Duo1(arg_59_0)
 	if arg_59_0.type == "label" then
 		arg_59_0.widget:GetChildChecked("Text", false):SetVal("text", userMods.ToWString(arg_59_0.text))
 	elseif arg_59_0.type == "checkbox" then
@@ -2402,635 +2402,635 @@ function SetOptionWidget(arg_59_0)
 	end
 end
 
-function AddOptionLabel(arg_60_0)
-	OptionBase[arg_60_0.name] = {}
-	OptionBase[arg_60_0.name].widget = mainForm:CreateWidgetByDesc(OptionLabelDesc)
+function AddOptionLabel_Duo1(arg_60_0)
+	OptionBase_Duo1[arg_60_0.name] = {}
+	OptionBase_Duo1[arg_60_0.name].widget = mainForm:CreateWidgetByDesc(OptionLabelDesc_Duo1)
 
-	OptionBase[arg_60_0.name].widget:SetName(arg_60_0.name)
+	OptionBase_Duo1[arg_60_0.name].widget:SetName(arg_60_0.name)
 
-	OptionBase[arg_60_0.name].text = arg_60_0.text
-	OptionBase[arg_60_0.name].type = "label"
+	OptionBase_Duo1[arg_60_0.name].text = arg_60_0.text
+	OptionBase_Duo1[arg_60_0.name].type = "label"
 
-	SetOptionWidget(OptionBase[arg_60_0.name])
-	OptionBase[arg_60_0.name].widget:Show(true)
-	PageOptsContainer:PushBack(OptionBase[arg_60_0.name].widget)
+	SetOptionWidget_Duo1(OptionBase_Duo1[arg_60_0.name])
+	OptionBase_Duo1[arg_60_0.name].widget:Show(true)
+	PageOptsContainer_Duo1:PushBack(OptionBase_Duo1[arg_60_0.name].widget)
 end
 
-function AddOptionCheckBox(arg_61_0)
-	OptionBase[arg_61_0.name] = {}
-	OptionBase[arg_61_0.name].widget = mainForm:CreateWidgetByDesc(OptionCheckBoxDesc)
+function AddOptionCheckBox_Duo1(arg_61_0)
+	OptionBase_Duo1[arg_61_0.name] = {}
+	OptionBase_Duo1[arg_61_0.name].widget = mainForm:CreateWidgetByDesc(OptionCheckBoxDesc_Duo1)
 
-	OptionBase[arg_61_0.name].widget:SetName(arg_61_0.name)
+	OptionBase_Duo1[arg_61_0.name].widget:SetName(arg_61_0.name)
 
-	OptionBase[arg_61_0.name].text = arg_61_0.text
-	OptionBase[arg_61_0.name].func = arg_61_0.func
-	OptionBase[arg_61_0.name].param1 = arg_61_0.param1
-	OptionBase[arg_61_0.name].type = "checkbox"
+	OptionBase_Duo1[arg_61_0.name].text = arg_61_0.text
+	OptionBase_Duo1[arg_61_0.name].func = arg_61_0.func
+	OptionBase_Duo1[arg_61_0.name].param1 = arg_61_0.param1
+	OptionBase_Duo1[arg_61_0.name].type = "checkbox"
 
-	SetOptionWidget(OptionBase[arg_61_0.name])
-	OptionBase[arg_61_0.name].widget:Show(true)
-	PageOptsContainer:PushBack(OptionBase[arg_61_0.name].widget)
+	SetOptionWidget_Duo1(OptionBase_Duo1[arg_61_0.name])
+	OptionBase_Duo1[arg_61_0.name].widget:Show(true)
+	PageOptsContainer_Duo1:PushBack(OptionBase_Duo1[arg_61_0.name].widget)
 end
 
-function AddOptionSelector(arg_62_0)
-	OptionBase[arg_62_0.name] = {}
-	OptionBase[arg_62_0.name].widget = mainForm:CreateWidgetByDesc(OptionSelectorDesc)
+function AddOptionSelector_Duo1(arg_62_0)
+	OptionBase_Duo1[arg_62_0.name] = {}
+	OptionBase_Duo1[arg_62_0.name].widget = mainForm:CreateWidgetByDesc(OptionSelectorDesc_Duo1)
 
-	OptionBase[arg_62_0.name].widget:SetName(arg_62_0.name)
+	OptionBase_Duo1[arg_62_0.name].widget:SetName(arg_62_0.name)
 
-	OptionBase[arg_62_0.name].text = arg_62_0.text
-	OptionBase[arg_62_0.name].func = arg_62_0.func
-	OptionBase[arg_62_0.name].minm = arg_62_0.minm
-	OptionBase[arg_62_0.name].maxm = arg_62_0.maxm
-	OptionBase[arg_62_0.name].step = arg_62_0.step
-	OptionBase[arg_62_0.name].param1 = arg_62_0.param1
-	OptionBase[arg_62_0.name].param2 = arg_62_0.param2
-	OptionBase[arg_62_0.name].type = "selector"
+	OptionBase_Duo1[arg_62_0.name].text = arg_62_0.text
+	OptionBase_Duo1[arg_62_0.name].func = arg_62_0.func
+	OptionBase_Duo1[arg_62_0.name].minm = arg_62_0.minm
+	OptionBase_Duo1[arg_62_0.name].maxm = arg_62_0.maxm
+	OptionBase_Duo1[arg_62_0.name].step = arg_62_0.step
+	OptionBase_Duo1[arg_62_0.name].param1 = arg_62_0.param1
+	OptionBase_Duo1[arg_62_0.name].param2 = arg_62_0.param2
+	OptionBase_Duo1[arg_62_0.name].type = "selector"
 
-	SetOptionWidget(OptionBase[arg_62_0.name])
-	OptionBase[arg_62_0.name].widget:Show(true)
-	PageOptsContainer:PushBack(OptionBase[arg_62_0.name].widget)
+	SetOptionWidget_Duo1(OptionBase_Duo1[arg_62_0.name])
+	OptionBase_Duo1[arg_62_0.name].widget:Show(true)
+	PageOptsContainer_Duo1:PushBack(OptionBase_Duo1[arg_62_0.name].widget)
 end
 
-function AddOptionButton(arg_63_0)
-	OptionBase[arg_63_0.name] = {}
-	OptionBase[arg_63_0.name].widget = mainForm:CreateWidgetByDesc(OptionButtonDesc)
+function AddOptionButton_Duo1(arg_63_0)
+	OptionBase_Duo1[arg_63_0.name] = {}
+	OptionBase_Duo1[arg_63_0.name].widget = mainForm:CreateWidgetByDesc(OptionButtonDesc_Duo1)
 
-	OptionBase[arg_63_0.name].widget:SetName(arg_63_0.name)
+	OptionBase_Duo1[arg_63_0.name].widget:SetName(arg_63_0.name)
 
-	OptionBase[arg_63_0.name].text = arg_63_0.text
-	OptionBase[arg_63_0.name].func = arg_63_0.func
-	OptionBase[arg_63_0.name].type = "button"
+	OptionBase_Duo1[arg_63_0.name].text = arg_63_0.text
+	OptionBase_Duo1[arg_63_0.name].func = arg_63_0.func
+	OptionBase_Duo1[arg_63_0.name].type = "button"
 
-	SetOptionWidget(OptionBase[arg_63_0.name])
-	OptionBase[arg_63_0.name].widget:Show(true)
-	PageOptsContainer:PushBack(OptionBase[arg_63_0.name].widget)
+	SetOptionWidget_Duo1(OptionBase_Duo1[arg_63_0.name])
+	OptionBase_Duo1[arg_63_0.name].widget:Show(true)
+	PageOptsContainer_Duo1:PushBack(OptionBase_Duo1[arg_63_0.name].widget)
 end
 
-function PrepareOptions()
-	AddOptionLabel({
+function PrepareOptions_Duo1()
+	AddOptionLabel_Duo1({
 		name = "lbl1",
-		text = L("LabelCommon")
+		text = L_Duo1("LabelCommon")
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk0",
 		param1 = "show_arrow",
-		text = L("ShowArrow"),
+		text = L_Duo1("ShowArrow"),
 		func = function()
-			eventAvatarTargetChanged()
+			eventAvatarTargetChanged_Duo1()
 		end
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk1",
 		param1 = "show_gear",
-		text = L("ShowGear"),
+		text = L_Duo1("ShowGear"),
 		func = function()
-			ShowGearChanged()
-			eventAvatarTargetChanged()
+			ShowGearChanged_Duo1()
+			eventAvatarTargetChanged_Duo1()
 		end
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk2",
 		param1 = "hide_green",
-		text = L("HideGreen"),
+		text = L_Duo1("HideGreen"),
 		func = function()
-			CollectUnits()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk3",
 		param1 = "show_pets",
-		text = L("ShowPets"),
+		text = L_Duo1("ShowPets"),
 		func = function()
-			CollectUnits()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		minm = 1,
 		name = "slc0",
 		param1 = "maxRows",
 		maxm = 24,
 		step = 1,
-		text = L("MaxRows"),
+		text = L_Duo1("MaxRows"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk10",
 		param1 = "show_mini",
-		text = L("ShowMini"),
+		text = L_Duo1("ShowMini"),
 		func = function()
-			CollectUnits()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk4",
 		param1 = "show_ownbuffs",
-		text = L("OwnBuffs")
+		text = L_Duo1("OwnBuffs")
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk5",
 		param1 = "show_mobbuffs",
-		text = L("MobBuffs")
+		text = L_Duo1("MobBuffs")
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk11",
 		param1 = "inverseSort",
-		text = L("InverseSort"),
+		text = L_Duo1("InverseSort"),
 		func = function()
-			CollectUnits()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionLabel({
+	AddOptionLabel_Duo1({
 		name = "lbl2",
-		text = L("LabelSingle")
+		text = L_Duo1("LabelSingle")
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		minm = 100,
 		name = "slc1",
 		param1 = "singleBarX",
 		maxm = 300,
 		step = 2,
-		text = L("PanelWidth"),
+		text = L_Duo1("PanelWidth"),
 		func = function()
-			UpdateUnitBarXY()
-			PrepareList()
-			CollectUnits()
+			UpdateUnitBarXY_Duo1()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		minm = 20,
 		name = "slc2",
 		param1 = "singleBarY",
 		maxm = 50,
 		step = 1,
-		text = L("PanelHeight"),
+		text = L_Duo1("PanelHeight"),
 		func = function()
-			UpdateUnitBarXY()
-			PrepareList()
-			CollectUnits()
+			UpdateUnitBarXY_Duo1()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		minm = 12,
 		name = "slc3",
 		param1 = "singleFontSize",
 		maxm = 30,
 		step = 1,
-		text = L("PanelFontSize"),
+		text = L_Duo1("PanelFontSize"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		minm = 18,
 		name = "slc31",
 		param1 = "singleIconSize",
 		maxm = 48,
 		step = 1,
-		text = L("PanelIconSize"),
+		text = L_Duo1("PanelIconSize"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk6",
 		param1 = "singleShadow",
-		text = L("PanelShadow"),
+		text = L_Duo1("PanelShadow"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk7",
 		param1 = "singleOutline",
-		text = L("PanelOutline"),
+		text = L_Duo1("PanelOutline"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionLabel({
+	AddOptionLabel_Duo1({
 		name = "lbl3",
-		text = L("LabelMulti")
+		text = L_Duo1("LabelMulti")
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		minm = 100,
 		name = "slc4",
 		param1 = "multiBarX",
 		maxm = 300,
 		step = 2,
-		text = L("PanelWidth"),
+		text = L_Duo1("PanelWidth"),
 		func = function()
-			UpdateUnitBarXY()
-			PrepareList()
-			CollectUnits()
+			UpdateUnitBarXY_Duo1()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		minm = 20,
 		name = "slc5",
 		param1 = "multiBarY",
 		maxm = 50,
 		step = 1,
-		text = L("PanelHeight"),
+		text = L_Duo1("PanelHeight"),
 		func = function()
-			UpdateUnitBarXY()
-			PrepareList()
-			CollectUnits()
+			UpdateUnitBarXY_Duo1()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		minm = 12,
 		name = "slc6",
 		param1 = "multiFontSize",
 		maxm = 30,
 		step = 1,
-		text = L("PanelFontSize"),
+		text = L_Duo1("PanelFontSize"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		minm = 18,
 		name = "slc32",
 		param1 = "multiIconSize",
 		maxm = 48,
 		step = 1,
-		text = L("PanelIconSize"),
+		text = L_Duo1("PanelIconSize"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk8",
 		param1 = "multiShadow",
-		text = L("PanelShadow"),
+		text = L_Duo1("PanelShadow"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionCheckBox({
+	AddOptionCheckBox_Duo1({
 		name = "chk9",
 		param1 = "multiOutline",
-		text = L("PanelOutline"),
+		text = L_Duo1("PanelOutline"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionLabel({
+	AddOptionLabel_Duo1({
 		name = "lbl5",
-		text = L("LabelPriority")
+		text = L_Duo1("LabelPriority")
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "WARRIOR",
 		name = "slc7",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("WARRIOR"),
+		text = L_Duo1("WARRIOR"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "PALADIN",
 		name = "slc8",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("PALADIN"),
+		text = L_Duo1("PALADIN"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "MAGE",
 		name = "slc9",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("MAGE"),
+		text = L_Duo1("MAGE"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "DRUID",
 		name = "slc10",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("DRUID"),
+		text = L_Duo1("DRUID"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "PSIONIC",
 		name = "slc11",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("PSIONIC"),
+		text = L_Duo1("PSIONIC"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "STALKER",
 		name = "slc12",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("STALKER"),
+		text = L_Duo1("STALKER"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "PRIEST",
 		name = "slc13",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("PRIEST"),
+		text = L_Duo1("PRIEST"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "NECROMANCER",
 		name = "slc14",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("NECROMANCER"),
+		text = L_Duo1("NECROMANCER"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "BARD",
 		name = "slc15",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("BARD"),
+		text = L_Duo1("BARD"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "ENGINEER",
 		name = "slc16",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("ENGINEER"),
+		text = L_Duo1("ENGINEER"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "WARLOCK",
 		name = "slc29",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("WARLOCK"),
+		text = L_Duo1("WARLOCK"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "PET",
 		name = "slc17",
 		param1 = "priority",
 		minm = 1,
 		maxm = 12,
 		step = 1,
-		text = L("PET"),
+		text = L_Duo1("PET"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionLabel({
+	AddOptionLabel_Duo1({
 		name = "lbl6",
-		text = L("LabelPosition")
+		text = L_Duo1("LabelPosition")
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "WARRIOR",
 		name = "slc18",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("WARRIOR"),
+		text = L_Duo1("WARRIOR"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "PALADIN",
 		name = "slc19",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("PALADIN"),
+		text = L_Duo1("PALADIN"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "MAGE",
 		name = "slc20",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("MAGE"),
+		text = L_Duo1("MAGE"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "DRUID",
 		name = "slc21",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("DRUID"),
+		text = L_Duo1("DRUID"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "PSIONIC",
 		name = "slc22",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("PSIONIC"),
+		text = L_Duo1("PSIONIC"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "STALKER",
 		name = "slc23",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("STALKER"),
+		text = L_Duo1("STALKER"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "PRIEST",
 		name = "slc24",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("PRIEST"),
+		text = L_Duo1("PRIEST"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "NECROMANCER",
 		name = "slc25",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("NECROMANCER"),
+		text = L_Duo1("NECROMANCER"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "BARD",
 		name = "slc26",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("BARD"),
+		text = L_Duo1("BARD"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "ENGINEER",
 		name = "slc27",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("ENGINEER"),
+		text = L_Duo1("ENGINEER"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "WARLOCK",
 		name = "slc30",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("WARLOCK"),
+		text = L_Duo1("WARLOCK"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionSelector({
+	AddOptionSelector_Duo1({
 		param2 = "PET",
 		name = "slc28",
 		param1 = "column",
 		minm = 1,
 		maxm = 4,
 		step = 1,
-		text = L("PET"),
+		text = L_Duo1("PET"),
 		func = function()
-			PrepareList()
-			CollectUnits()
+			PrepareList_Duo1()
+			CollectUnits_Duo1()
 		end
 	})
-	AddOptionButton({
+	AddOptionButton_Duo1({
 		name = "btn1",
-		text = L("ResetConfig"),
+		text = L_Duo1("ResetConfig"),
 		func = function()
-			DefaultConfig()
+			DefaultConfig_Duo1()
 		end
 	})
-	AddOptionButton({
+	AddOptionButton_Duo1({
 		name = "btn2",
-		text = L("ExportBuffs"),
+		text = L_Duo1("ExportBuffs"),
 		func = function()
-			ExportBuffs()
+			ExportBuffs_Duo1()
 		end
 	})
-	AddOptionButton({
+	AddOptionButton_Duo1({
 		name = "btn3",
-		text = L("ResetBuffs"),
+		text = L_Duo1("ResetBuffs"),
 		func = function()
-			DefaultBuffs()
+			DefaultBuffs_Duo1()
 		end
 	})
 end
 
-function ShowGearChanged()
+function ShowGearChanged_Duo1()
 	if var_0_24.show_gear ~= true then
 		var_0_2:Show(false)
 		var_0_3:Show(false)
@@ -3038,7 +3038,7 @@ function ShowGearChanged()
 	end
 end
 
-function OnCheckBoxClick(arg_112_0)
+function OnCheckBoxClick_Duo1(arg_112_0)
 	if arg_112_0.widget:GetVariant() == 0 then
 		arg_112_0.widget:SetVariant(1)
 	else
@@ -3046,127 +3046,127 @@ function OnCheckBoxClick(arg_112_0)
 	end
 end
 
-function OnOptionButton(arg_113_0)
+function OnOptionButton_Duo1(arg_113_0)
 	local var_113_0 = arg_113_0.widget:GetParent():GetName()
 
-	if OptionBase[var_113_0] and OptionBase[var_113_0].func then
-		OptionBase[var_113_0].func()
+	if OptionBase_Duo1[var_113_0] and OptionBase_Duo1[var_113_0].func then
+		OptionBase_Duo1[var_113_0].func()
 	end
 end
 
-function OnOptionCheckBox(arg_114_0)
+function OnOptionCheckBox_Duo1(arg_114_0)
 	local var_114_0 = arg_114_0.widget:GetParent():GetName()
 
-	if OptionBase[var_114_0] then
-		if var_0_24[OptionBase[var_114_0].param1] == true then
-			var_0_24[OptionBase[var_114_0].param1] = false
+	if OptionBase_Duo1[var_114_0] then
+		if var_0_24[OptionBase_Duo1[var_114_0].param1] == true then
+			var_0_24[OptionBase_Duo1[var_114_0].param1] = false
 		else
-			var_0_24[OptionBase[var_114_0].param1] = true
+			var_0_24[OptionBase_Duo1[var_114_0].param1] = true
 		end
 
-		SetOptionWidget(OptionBase[var_114_0])
+		SetOptionWidget_Duo1(OptionBase_Duo1[var_114_0])
 
-		if OptionBase[var_114_0].func then
-			OptionBase[var_114_0].func()
+		if OptionBase_Duo1[var_114_0].func then
+			OptionBase_Duo1[var_114_0].func()
 		end
 	end
 end
 
-function OnOptionNext(arg_115_0)
+function OnOptionNext_Duo1(arg_115_0)
 	local var_115_0 = arg_115_0.widget:GetParent():GetName()
 
-	if OptionBase[var_115_0] then
-		if not OptionBase[var_115_0].param2 then
-			local var_115_1 = var_0_24[OptionBase[var_115_0].param1]
+	if OptionBase_Duo1[var_115_0] then
+		if not OptionBase_Duo1[var_115_0].param2 then
+			local var_115_1 = var_0_24[OptionBase_Duo1[var_115_0].param1]
 
-			if var_115_1 < OptionBase[var_115_0].maxm then
-				local var_115_2 = math.min(var_115_1 + OptionBase[var_115_0].step, OptionBase[var_115_0].maxm)
+			if var_115_1 < OptionBase_Duo1[var_115_0].maxm then
+				local var_115_2 = math.min(var_115_1 + OptionBase_Duo1[var_115_0].step, OptionBase_Duo1[var_115_0].maxm)
 
-				var_0_24[OptionBase[var_115_0].param1] = var_115_2
+				var_0_24[OptionBase_Duo1[var_115_0].param1] = var_115_2
 
-				SetOptionWidget(OptionBase[var_115_0])
+				SetOptionWidget_Duo1(OptionBase_Duo1[var_115_0])
 
-				if OptionBase[var_115_0].func then
-					OptionBase[var_115_0].func()
+				if OptionBase_Duo1[var_115_0].func then
+					OptionBase_Duo1[var_115_0].func()
 				end
 			end
 		else
-			local var_115_3 = var_0_24[OptionBase[var_115_0].param1][OptionBase[var_115_0].param2]
+			local var_115_3 = var_0_24[OptionBase_Duo1[var_115_0].param1][OptionBase_Duo1[var_115_0].param2]
 
-			if var_115_3 < OptionBase[var_115_0].maxm then
-				local var_115_4 = math.min(var_115_3 + OptionBase[var_115_0].step, OptionBase[var_115_0].maxm)
+			if var_115_3 < OptionBase_Duo1[var_115_0].maxm then
+				local var_115_4 = math.min(var_115_3 + OptionBase_Duo1[var_115_0].step, OptionBase_Duo1[var_115_0].maxm)
 
-				var_0_24[OptionBase[var_115_0].param1][OptionBase[var_115_0].param2] = var_115_4
+				var_0_24[OptionBase_Duo1[var_115_0].param1][OptionBase_Duo1[var_115_0].param2] = var_115_4
 
-				SetOptionWidget(OptionBase[var_115_0])
+				SetOptionWidget_Duo1(OptionBase_Duo1[var_115_0])
 
-				if OptionBase[var_115_0].func then
-					OptionBase[var_115_0].func()
+				if OptionBase_Duo1[var_115_0].func then
+					OptionBase_Duo1[var_115_0].func()
 				end
 			end
 		end
 	end
 end
 
-function OnOptionPrev(arg_116_0)
+function OnOptionPrev_Duo1(arg_116_0)
 	local var_116_0 = arg_116_0.widget:GetParent():GetName()
 
-	if OptionBase[var_116_0] then
-		if not OptionBase[var_116_0].param2 then
-			local var_116_1 = var_0_24[OptionBase[var_116_0].param1]
+	if OptionBase_Duo1[var_116_0] then
+		if not OptionBase_Duo1[var_116_0].param2 then
+			local var_116_1 = var_0_24[OptionBase_Duo1[var_116_0].param1]
 
-			if var_116_1 > OptionBase[var_116_0].minm then
-				local var_116_2 = math.max(var_116_1 - OptionBase[var_116_0].step, OptionBase[var_116_0].minm)
+			if var_116_1 > OptionBase_Duo1[var_116_0].minm then
+				local var_116_2 = math.max(var_116_1 - OptionBase_Duo1[var_116_0].step, OptionBase_Duo1[var_116_0].minm)
 
-				var_0_24[OptionBase[var_116_0].param1] = var_116_2
+				var_0_24[OptionBase_Duo1[var_116_0].param1] = var_116_2
 
-				SetOptionWidget(OptionBase[var_116_0])
+				SetOptionWidget_Duo1(OptionBase_Duo1[var_116_0])
 
-				if OptionBase[var_116_0].func then
-					OptionBase[var_116_0].func()
+				if OptionBase_Duo1[var_116_0].func then
+					OptionBase_Duo1[var_116_0].func()
 				end
 			end
 		else
-			local var_116_3 = var_0_24[OptionBase[var_116_0].param1][OptionBase[var_116_0].param2]
+			local var_116_3 = var_0_24[OptionBase_Duo1[var_116_0].param1][OptionBase_Duo1[var_116_0].param2]
 
-			if var_116_3 > OptionBase[var_116_0].minm then
-				local var_116_4 = math.max(var_116_3 - OptionBase[var_116_0].step, OptionBase[var_116_0].minm)
+			if var_116_3 > OptionBase_Duo1[var_116_0].minm then
+				local var_116_4 = math.max(var_116_3 - OptionBase_Duo1[var_116_0].step, OptionBase_Duo1[var_116_0].minm)
 
-				var_0_24[OptionBase[var_116_0].param1][OptionBase[var_116_0].param2] = var_116_4
+				var_0_24[OptionBase_Duo1[var_116_0].param1][OptionBase_Duo1[var_116_0].param2] = var_116_4
 
-				SetOptionWidget(OptionBase[var_116_0])
+				SetOptionWidget_Duo1(OptionBase_Duo1[var_116_0])
 
-				if OptionBase[var_116_0].func then
-					OptionBase[var_116_0].func()
+				if OptionBase_Duo1[var_116_0].func then
+					OptionBase_Duo1[var_116_0].func()
 				end
 			end
 		end
 	end
 end
 
-function OnReactionShowHideBtnReaction()
+function OnReactionShowHideBtnReaction_Duo1()
 	if DnD.IsDragging() then
 		return
 	end
-	ClosePanelka()
+	ClosePanelka_Duo1()
 	userMods.SendEvent("BUFFANNOUNCE_DUO_VISIBILITY", { show = var_0_24.show_panel })
 end
 
-function ClosePanelka()
+function ClosePanelka_Duo1()
 	if var_0_24.show_panel == true then
 		var_0_24.show_panel = false
 	else
 		var_0_24.show_panel = true
 
-		PrepareList()
-		CollectUnits()
+		PrepareList_Duo1()
+		CollectUnits_Duo1()
 	end
 
-	MainPanel:Show(var_0_24.show_panel)
+	MainPanel_Duo1:Show(var_0_24.show_panel)
 	SetConfig("config", var_0_24)
 end
 
-function AOPanelStart(arg_119_0)
+function AOPanelStart_Duo1(arg_119_0)
 	local var_119_0 = mainForm:GetChildChecked("AOPanel", false)
 	local var_119_1 = {
 		val = userMods.ToWString("B2")
@@ -3183,25 +3183,25 @@ function AOPanelStart(arg_119_0)
 		sysName = "BuffAnnounceDuo",
 		param = var_119_2
 	})
-	ShowHideBtn:Show(false)
-	MoveWidget(var_0_2, {
+	ShowHideBtn_Duo1:Show(false)
+	MoveWidget_Duo1(var_0_2, {
 		posY = 30
 	})
-	MoveWidget(var_0_3, {
+	MoveWidget_Duo1(var_0_3, {
 		posY = 50
 	})
-	MoveWidget(var_0_4, {
+	MoveWidget_Duo1(var_0_4, {
 		posY = 70
 	})
 end
 
-function AOPanelLMB(arg_120_0)
+function AOPanelLMB_Duo1(arg_120_0)
 	if arg_120_0.sender == "BuffAnnounceDuo" then
-		OnReactionShowHideBtnReaction()
+		OnReactionShowHideBtnReaction_Duo1()
 	end
 end
 
-function PrepareConfig()
+function PrepareConfig_Duo1()
 	if var_0_24.show_mark == nil then
 		var_0_24.show_mark = true
 	end
@@ -3351,23 +3351,23 @@ function PrepareConfig()
 	end
 end
 
-function DefaultConfig()
+function DefaultConfig_Duo1()
 	var_0_24 = {}
 
-	PrepareConfig()
+	PrepareConfig_Duo1()
 
-	for iter_122_0, iter_122_1 in pairs(OptionBase) do
-		SetOptionWidget(iter_122_1)
+	for iter_122_0, iter_122_1 in pairs(OptionBase_Duo1) do
+		SetOptionWidget_Duo1(iter_122_1)
 	end
 
-	ShowGearChanged()
-	eventAvatarTargetChanged()
-	UpdateUnitBarXY()
-	PrepareList()
-	CollectUnits()
+	ShowGearChanged_Duo1()
+	eventAvatarTargetChanged_Duo1()
+	UpdateUnitBarXY_Duo1()
+	PrepareList_Duo1()
+	CollectUnits_Duo1()
 end
 
-function DefaultBuffs()
+function DefaultBuffs_Duo1()
 	var_0_28 = nil
 	var_0_28 = {}
 
@@ -3382,10 +3382,10 @@ function DefaultBuffs()
 		var_123_0 = var_123_0 + 1
 	end
 
-	RepaintContainer()
+	RepaintContainer_Duo1()
 end
 
-function ExportBuffs()
+function ExportBuffs_Duo1()
 	local var_124_0 = "\n\n-- \xC2\xF1\xF2\xE0\xE2\xFC\xF2\xE5 \xF1\xEB\xE5\xE4\xF3\xFE\xF9\xE8\xE9 \xF2\xE5\xEA\xF1\xF2 \xE2 \xF4\xE0\xE9\xEB DataBaseDefault.txt \xE2 \xEF\xE0\xEF\xEA\xE5 \xE0\xE4\xE4\xEE\xED\xE0, \xE5\xF1\xEB\xE8 \xF5\xEE\xF2\xE8\xF2\xE5 \xE7\xE0\xE3\xF0\xF3\xE6\xE0\xF2\xFC \xFD\xF2\xEE\xF2 \xF1\xEF\xE8\xF1\xEE\xEA \xE1\xE0\xF4\xEE\xE2 \xEF\xF0\xE8 \xF1\xE1\xF0\xEE\xF1\xE5\n" .. "-- \xC7\xE0\xF2\xE5\xEC \xE2 \xE8\xE3\xF0\xE5 \xEF\xE5\xF0\xE5\xE7\xE0\xE3\xF0\xF3\xE7\xE8\xF2\xE5 \xE0\xE4\xE4\xEE\xED \xE8 \xF1\xE4\xE5\xEB\xE0\xE9\xF2\xE5 \xF1\xE1\xF0\xEE\xF1 \xF1\xEF\xE8\xF1\xEA\xE0 \xE1\xE0\xF4\xEE\xE2 \xE2 \xED\xE0\xF1\xF2\xF0\xEE\xE9\xEA\xE0\xF5 \xE0\xE4\xE4\xEE\xED\xE0\n\nGlobal(\"DataBaseDefault\", {\n"
 
 	for iter_124_0, iter_124_1 in ipairs(var_0_28) do
@@ -3400,30 +3400,30 @@ function ExportBuffs()
 	common.LogInfo("common", var_124_3)
 end
 
-function Init()
+function Init_Duo1()
 	mainForm:Show(true)
 
 	if not var_0_24 then
 		var_0_24 = {}
 	end
 
-	PrepareConfig()
+	PrepareConfig_Duo1()
 	SetConfig("config", var_0_24)
-	MainPanel:SetBackgroundColor({
+	MainPanel_Duo1:SetBackgroundColor({
 		g = 0,
 		a = 0,
 		b = 0,
 		r = 0
 	})
-	MainPanel:Show(var_0_24.show_panel)
-	FadePanel:SetBackgroundColor({
+	MainPanel_Duo1:Show(var_0_24.show_panel)
+	FadePanel_Duo1:SetBackgroundColor({
 		g = 0,
 		a = 1,
 		b = 0,
 		r = 0
 	})
-	FadePanel:SetFade(0)
-	RezhimColor()
+	FadePanel_Duo1:SetFade(0)
+	RezhimColor_Duo1()
 
 	var_0_22 = var_0_24.singleBarX
 	var_0_23 = var_0_24.singleBarY
@@ -3434,9 +3434,9 @@ function Init()
 	end
 
 	if var_0_24.disable_buffs == true then
-		PanelkaDND:GetChildChecked("Checkbox", false):SetVariant(0)
+		PanelkaDND_Duo1:GetChildChecked("Checkbox", false):SetVariant(0)
 	else
-		PanelkaDND:GetChildChecked("Checkbox", false):SetVariant(1)
+		PanelkaDND_Duo1:GetChildChecked("Checkbox", false):SetVariant(1)
 	end
 
 	if GS.Init then
@@ -3445,10 +3445,10 @@ function Init()
 
 	GS.EnableTargetInspection(false)
 
-	var_0_17 = GetGameLocalization()
-	var_0_18 = L("ss")
-	var_0_19 = L("mm")
-	var_0_20 = L("hh")
+	var_0_17 = GetGameLocalization_Duo1()
+	var_0_18 = L_Duo1("ss")
+	var_0_19 = L_Duo1("mm")
+	var_0_20 = L_Duo1("hh")
 	var_0_29 = {}
 	var_0_30 = {}
 
@@ -3484,53 +3484,53 @@ function Init()
 	var_0_2:Show(false)
 	var_0_3:Show(false)
 	var_0_4:Show(false)
-	widget:Show(false)
-	widgetMini:Show(false)
+	widget_Duo1:Show(false)
+	widgetMini_Duo1:Show(false)
 	var_0_1:Show(false)
-	Header:GetChildChecked("Page1", false):GetChildChecked("PageText", false):SetVal("text", userMods.ToWString(L("PageBuffs")))
-	Header:GetChildChecked("Page2", false):GetChildChecked("PageText", false):SetVal("text", userMods.ToWString(L("PageOpts")))
-	Header:GetChildChecked("Page3", false):GetChildChecked("PageText", false):SetVal("text", userMods.ToWString(L("PageMark")))
-	PageBuffs:GetChildChecked("LabelBuffName", false):SetVal("text", userMods.ToWString(L("BuffName")))
-	PageBuffs:GetChildChecked("LabelOnUnit", false):SetVal("text", userMods.ToWString(L("OnUnit")))
-	PageBuffs:GetChildChecked("LabelOnMobs", false):SetVal("text", userMods.ToWString(L("OnMobs")))
-	PageMark:GetChildChecked("ItemShowMark", false):GetChildChecked("Text", false):SetVal("text", userMods.ToWString(L("ShowMark")))
-	SelectMode:GetChildChecked("Name1", false):SetVal("Name", userMods.ToWString(L("Enemies")))
-	SelectMode:GetChildChecked("Name2", false):SetVal("Name", userMods.ToWString(L("Friends")))
-	SelectMode:GetChildChecked("Name3", false):SetVal("Name", userMods.ToWString(L("Mobs")))
-	SelectMode:GetChildChecked("Name4", false):SetVal("Name", userMods.ToWString(L("Spectator")))
+	Header_Duo1:GetChildChecked("Page1", false):GetChildChecked("PageText", false):SetVal("text", userMods.ToWString(L_Duo1("PageBuffs")))
+	Header_Duo1:GetChildChecked("Page2", false):GetChildChecked("PageText", false):SetVal("text", userMods.ToWString(L_Duo1("PageOpts")))
+	Header_Duo1:GetChildChecked("Page3", false):GetChildChecked("PageText", false):SetVal("text", userMods.ToWString(L_Duo1("PageMark")))
+	PageBuffs_Duo1:GetChildChecked("LabelBuffName", false):SetVal("text", userMods.ToWString(L_Duo1("BuffName")))
+	PageBuffs_Duo1:GetChildChecked("LabelOnUnit", false):SetVal("text", userMods.ToWString(L_Duo1("OnUnit")))
+	PageBuffs_Duo1:GetChildChecked("LabelOnMobs", false):SetVal("text", userMods.ToWString(L_Duo1("OnMobs")))
+	PageMark_Duo1:GetChildChecked("ItemShowMark", false):GetChildChecked("Text", false):SetVal("text", userMods.ToWString(L_Duo1("ShowMark")))
+	SelectMode_Duo1:GetChildChecked("Name1", false):SetVal("Name", userMods.ToWString(L_Duo1("Enemies")))
+	SelectMode_Duo1:GetChildChecked("Name2", false):SetVal("Name", userMods.ToWString(L_Duo1("Friends")))
+	SelectMode_Duo1:GetChildChecked("Name3", false):SetVal("Name", userMods.ToWString(L_Duo1("Mobs")))
+	SelectMode_Duo1:GetChildChecked("Name4", false):SetVal("Name", userMods.ToWString(L_Duo1("Spectator")))
 
 	for iter_125_4 = 1, 4 do
-		UnitBars[iter_125_4] = {}
-		UnitButtons[iter_125_4] = {}
-		Icons[iter_125_4] = {}
-		Names[iter_125_4] = {}
-		Levels[iter_125_4] = {}
-		Backgrounds[iter_125_4] = {}
-		Foregrounds[iter_125_4] = {}
-		Bubbles[iter_125_4] = {}
+		UnitBars_Duo1[iter_125_4] = {}
+		UnitButtons_Duo1[iter_125_4] = {}
+		Icons_Duo1[iter_125_4] = {}
+		Names_Duo1[iter_125_4] = {}
+		Levels_Duo1[iter_125_4] = {}
+		Backgrounds_Duo1[iter_125_4] = {}
+		Foregrounds_Duo1[iter_125_4] = {}
+		Bubbles_Duo1[iter_125_4] = {}
 
 		for iter_125_5 = 1, 24 do
-			UnitBars[iter_125_4][iter_125_5] = mainForm:CreateWidgetByDesc(UnitBarDesc)
-			UnitButtons[iter_125_4][iter_125_5] = mainForm:CreateWidgetByDesc(UnitButtonDesc)
-			Icons[iter_125_4][iter_125_5] = UnitBars[iter_125_4][iter_125_5]:GetChildChecked("Icon", false)
-			Names[iter_125_4][iter_125_5] = UnitBars[iter_125_4][iter_125_5]:GetChildChecked("Name", false)
-			Levels[iter_125_4][iter_125_5] = UnitBars[iter_125_4][iter_125_5]:GetChildChecked("Level", false)
-			Backgrounds[iter_125_4][iter_125_5] = UnitBars[iter_125_4][iter_125_5]:GetChildChecked("Background", false)
-			Foregrounds[iter_125_4][iter_125_5] = UnitBars[iter_125_4][iter_125_5]:GetChildChecked("Foreground", false)
-			Bubbles[iter_125_4][iter_125_5] = UnitBars[iter_125_4][iter_125_5]:GetChildChecked("Bubble", false)
+			UnitBars_Duo1[iter_125_4][iter_125_5] = mainForm:CreateWidgetByDesc(UnitBarDesc_Duo1)
+			UnitButtons_Duo1[iter_125_4][iter_125_5] = mainForm:CreateWidgetByDesc(UnitButtonDesc_Duo1)
+			Icons_Duo1[iter_125_4][iter_125_5] = UnitBars_Duo1[iter_125_4][iter_125_5]:GetChildChecked("Icon", false)
+			Names_Duo1[iter_125_4][iter_125_5] = UnitBars_Duo1[iter_125_4][iter_125_5]:GetChildChecked("Name", false)
+			Levels_Duo1[iter_125_4][iter_125_5] = UnitBars_Duo1[iter_125_4][iter_125_5]:GetChildChecked("Level", false)
+			Backgrounds_Duo1[iter_125_4][iter_125_5] = UnitBars_Duo1[iter_125_4][iter_125_5]:GetChildChecked("Background", false)
+			Foregrounds_Duo1[iter_125_4][iter_125_5] = UnitBars_Duo1[iter_125_4][iter_125_5]:GetChildChecked("Foreground", false)
+			Bubbles_Duo1[iter_125_4][iter_125_5] = UnitBars_Duo1[iter_125_4][iter_125_5]:GetChildChecked("Bubble", false)
 
-			Backgrounds[iter_125_4][iter_125_5]:SetBackgroundColor({
+			Backgrounds_Duo1[iter_125_4][iter_125_5]:SetBackgroundColor({
 				g = 0,
 				a = 1,
 				b = 0,
 				r = 0
 			})
-			MainPanel:AddChild(UnitBars[iter_125_4][iter_125_5])
-			MainPanel:AddChild(UnitButtons[iter_125_4][iter_125_5])
+			MainPanel_Duo1:AddChild(UnitBars_Duo1[iter_125_4][iter_125_5])
+			MainPanel_Duo1:AddChild(UnitButtons_Duo1[iter_125_4][iter_125_5])
 		end
 	end
 
-	PrepareList()
+	PrepareList_Duo1()
 
 	var_0_5 = {}
 	var_0_6 = {}
@@ -3543,101 +3543,101 @@ function Init()
 				objectId = iter_125_7
 			}
 
-			common.RegisterEventHandler(eventBuffsChanged, "EVENT_OBJECT_BUFFS_CHANGED", var_0_6[iter_125_7])
-			common.RegisterEventHandler(eventBuffsAdded, "EVENT_OBJECT_BUFF_ADDED", var_0_6[iter_125_7])
+			common.RegisterEventHandler(eventBuffsChanged_Duo1, "EVENT_OBJECT_BUFFS_CHANGED", var_0_6[iter_125_7])
+			common.RegisterEventHandler(eventBuffsAdded_Duo1, "EVENT_OBJECT_BUFF_ADDED", var_0_6[iter_125_7])
 		end
 
-		CreateNamePlate(iter_125_7)
+		CreateNamePlate_Duo1(iter_125_7)
 	end
 
-	CollectUnits()
+	CollectUnits_Duo1()
 
 	if var_0_24.disable_buffs == false then
-		common.RegisterEventHandler(eventBuffsElementChanged, "EVENT_OBJECT_BUFFS_ELEMENT_CHANGED")
+		common.RegisterEventHandler(eventBuffsElementChanged_Duo1, "EVENT_OBJECT_BUFFS_ELEMENT_CHANGED")
 
 		var_0_8 = true
 	end
 
 	var_0_7 = false
 
-	DnD.Init(MainPanel, PanelkaDND, true)
-	DnD.Init(OptionsNew, Header, true)
-	DnD.Init(ShowHideBtn, nil, true)
+	DnD.Init(MainPanel_Duo1, PanelkaDND_Duo1, true)
+	DnD.Init(OptionsNew_Duo1, Header_Duo1, true)
+	DnD.Init(ShowHideBtn_Duo1, nil, true)
 
-	var_0_31 = Target:GetPlacementPlain()
-	var_0_32 = Target:GetPlacementPlain()
+	var_0_31 = Target_Duo1:GetPlacementPlain()
+	var_0_32 = Target_Duo1:GetPlacementPlain()
 
-	Target:Show(false)
-	Arrow:SetBackgroundColor({
+	Target_Duo1:Show(false)
+	Arrow_Duo1:SetBackgroundColor({
 		g = 1,
 		a = 1,
 		b = 0,
 		r = 0
 	})
-	ArrowText:SetClassVal("class", "tip_golden")
-	Arrow:Show(false)
-	ContainerItem:Show(false)
+	ArrowText_Duo1:SetClassVal("class", "tip_golden")
+	Arrow_Duo1:Show(false)
+	ContainerItem_Duo1:Show(false)
 
-	if not TargetsDB[var_0_24.current_target] then
+	if not TargetsDB_Duo1[var_0_24.current_target] then
 		var_0_24.current_target = 1
 	end
 
-	for iter_125_8, iter_125_9 in ipairs(TargetsDB) do
-		ContainerItems[iter_125_8] = mainForm:CreateWidgetByDesc(ContainerItemDesc)
+	for iter_125_8, iter_125_9 in ipairs(TargetsDB_Duo1) do
+		ContainerItems_Duo1[iter_125_8] = mainForm:CreateWidgetByDesc(ContainerItemDesc_Duo1)
 
-		ContainerItems[iter_125_8]:GetChildChecked("ContainerItemText", false):SetVal("text", userMods.ToWString(iter_125_9.name))
-		Container:PushBack(ContainerItems[iter_125_8])
+		ContainerItems_Duo1[iter_125_8]:GetChildChecked("ContainerItemText", false):SetVal("text", userMods.ToWString(iter_125_9.name))
+		Container_Duo1:PushBack(ContainerItems_Duo1[iter_125_8])
 	end
 
-	OptionLabel:Show(false)
-	OptionCheckBox:Show(false)
-	OptionSelector:Show(false)
-	OptionButton:Show(false)
-	PrepareOptions()
-	common.RegisterEventHandler(eventUnitsChanged, "EVENT_UNITS_CHANGED")
-	common.RegisterEventHandler(eventUnitDeadChanged, "EVENT_UNIT_DEAD_CHANGED")
-	common.RegisterEventHandler(eventEffectFinished, "EVENT_EFFECT_FINISHED")
-	common.RegisterEventHandler(eventAvatarTargetChanged, "EVENT_AVATAR_TARGET_CHANGED")
-	common.RegisterEventHandler(eventObjectHealthChanged, "EVENT_OBJECT_HEALTH_CHANGED")
-	common.RegisterEventHandler(eventObjectSelectableChanged, "EVENT_OBJECT_SELECTABLE_CHANGED")
-	common.RegisterEventHandler(eventObjectCombatChanged, "EVENT_OBJECT_COMBAT_STATUS_CHANGED")
-	common.RegisterEventHandler(eventRelationChanged, "EVENT_UNIT_RELATION_CHANGED")
-	common.RegisterEventHandler(AvatarPosChange, "EVENT_AVATAR_POS_CHANGED")
-	common.RegisterEventHandler(AvatarPosChange, "EVENT_CAMERA_DIRECTION_CHANGED")
-	common.RegisterEventHandler(PartyPosChange, "EVENT_PARTY_MEMBER_POSITION_UPDATED")
-	common.RegisterEventHandler(PartyPosChange, "EVENT_RAID_MEMBER_POSITION_UPDATED")
-	common.RegisterEventHandler(eventLibGS, "LIBGS_GEARSCORE_AVAILABLE")
-	common.RegisterReactionHandler(reactionSelectTarget, "SelectTarget")
-	common.RegisterReactionHandler(OnReactionShowHideBtnReaction, "ShowHideBtnReaction")
-	common.RegisterReactionHandler(OnMBtnReaction, "MBtnReaction")
-	common.RegisterReactionHandler(OnRBtnReaction, "RBtnReaction")
-	common.RegisterReactionHandler(OnRBtnReaction, "AcceptChanges")
-	common.RegisterReactionHandler(OnXBtnReaction, "XBtnReaction")
-	common.RegisterReactionHandler(OnSBtnReaction, "SBtnReaction")
-	common.RegisterReactionHandler(OnSelectMode, "OnSelectMode")
-	common.RegisterReactionHandler(OnPanelkaCheckbox, "panelka_checkbox")
-	common.RegisterReactionHandler(SelectVarOfTarget, "SelectVarOfTarget")
-	common.RegisterReactionHandler(OnPageBuffsCheckBoxClick, "page_buffs_checkbox")
-	common.RegisterReactionHandler(ButtonEditClick, "ButtonEditClick")
-	common.RegisterReactionHandler(ButtonDeleteClick, "ButtonDeleteClick")
-	common.RegisterReactionHandler(RenameCancelReaction, "RenameCancelReaction")
-	common.RegisterReactionHandler(RenameBuildReaction, "RenameBuildReaction")
-	common.RegisterReactionHandler(RenameFocusChanged, "RenameFocusChanged")
-	common.RegisterReactionHandler(NewItem, "NewItem")
-	common.RegisterReactionHandler(OnSelectPage, "select_page")
-	common.RegisterReactionHandler(OnOptionButton, "OnOptionButton")
-	common.RegisterReactionHandler(OnOptionCheckBox, "OnOptionCheckBox")
-	common.RegisterReactionHandler(OnOptionNext, "OnOptionNext")
-	common.RegisterReactionHandler(OnOptionPrev, "OnOptionPrev")
-	common.RegisterEventHandler(AOPanelStart, "AOPANEL_START")
-	common.RegisterEventHandler(AOPanelLMB, "AOPANEL_BUTTON_LEFT_CLICK")
-	common.RegisterReactionHandler(OnCheckBoxClick, "mouse_left_click")
-	common.RegisterReactionHandler(PanelkaDNDOnPointing, "PanelkaDNDOnPointing")
-	common.RegisterEventHandler(eventSecondTimer, "EVENT_SECOND_TIMER")
+	OptionLabel_Duo1:Show(false)
+	OptionCheckBox_Duo1:Show(false)
+	OptionSelector_Duo1:Show(false)
+	OptionButton_Duo1:Show(false)
+	PrepareOptions_Duo1()
+	common.RegisterEventHandler(eventUnitsChanged_Duo1, "EVENT_UNITS_CHANGED")
+	common.RegisterEventHandler(eventUnitDeadChanged_Duo1, "EVENT_UNIT_DEAD_CHANGED")
+	common.RegisterEventHandler(eventEffectFinished_Duo1, "EVENT_EFFECT_FINISHED")
+	common.RegisterEventHandler(eventAvatarTargetChanged_Duo1, "EVENT_AVATAR_TARGET_CHANGED")
+	common.RegisterEventHandler(eventObjectHealthChanged_Duo1, "EVENT_OBJECT_HEALTH_CHANGED")
+	common.RegisterEventHandler(eventObjectSelectableChanged_Duo1, "EVENT_OBJECT_SELECTABLE_CHANGED")
+	common.RegisterEventHandler(eventObjectCombatChanged_Duo1, "EVENT_OBJECT_COMBAT_STATUS_CHANGED")
+	common.RegisterEventHandler(eventRelationChanged_Duo1, "EVENT_UNIT_RELATION_CHANGED")
+	common.RegisterEventHandler(AvatarPosChange_Duo1, "EVENT_AVATAR_POS_CHANGED")
+	common.RegisterEventHandler(AvatarPosChange_Duo1, "EVENT_CAMERA_DIRECTION_CHANGED")
+	common.RegisterEventHandler(PartyPosChange_Duo1, "EVENT_PARTY_MEMBER_POSITION_UPDATED")
+	common.RegisterEventHandler(PartyPosChange_Duo1, "EVENT_RAID_MEMBER_POSITION_UPDATED")
+	common.RegisterEventHandler(eventLibGS_Duo1, "LIBGS_GEARSCORE_AVAILABLE")
+	common.RegisterReactionHandler(reactionSelectTarget_Duo1, "SelectTarget_Duo1")
+	common.RegisterReactionHandler(OnReactionShowHideBtnReaction_Duo1, "ShowHideBtnReaction_Duo1")
+	common.RegisterReactionHandler(OnMBtnReaction_Duo1, "MBtnReaction_Duo1")
+	common.RegisterReactionHandler(OnRBtnReaction_Duo1, "RBtnReaction_Duo1")
+	common.RegisterReactionHandler(OnRBtnReaction_Duo1, "AcceptChanges_Duo1")
+	common.RegisterReactionHandler(OnXBtnReaction_Duo1, "XBtnReaction_Duo1")
+	common.RegisterReactionHandler(OnSBtnReaction_Duo1, "SBtnReaction_Duo1")
+	common.RegisterReactionHandler(OnSelectMode_Duo1, "OnSelectMode_Duo1")
+	common.RegisterReactionHandler(OnPanelkaCheckbox_Duo1, "panelka_checkbox_Duo1")
+	common.RegisterReactionHandler(SelectVarOfTarget_Duo1, "SelectVarOfTarget_Duo1")
+	common.RegisterReactionHandler(OnPageBuffsCheckBoxClick_Duo1, "page_buffs_checkbox_Duo1")
+	common.RegisterReactionHandler(ButtonEditClick_Duo1, "ButtonEditClick_Duo1")
+	common.RegisterReactionHandler(ButtonDeleteClick_Duo1, "ButtonDeleteClick_Duo1")
+	common.RegisterReactionHandler(RenameCancelReaction_Duo1, "RenameCancelReaction_Duo1")
+	common.RegisterReactionHandler(RenameBuildReaction_Duo1, "RenameBuildReaction_Duo1")
+	common.RegisterReactionHandler(RenameFocusChanged_Duo1, "RenameFocusChanged_Duo1")
+	common.RegisterReactionHandler(NewItem_Duo1, "NewItem_Duo1")
+	common.RegisterReactionHandler(OnSelectPage_Duo1, "select_page_Duo1")
+	common.RegisterReactionHandler(OnOptionButton_Duo1, "OnOptionButton_Duo1")
+	common.RegisterReactionHandler(OnOptionCheckBox_Duo1, "OnOptionCheckBox_Duo1")
+	common.RegisterReactionHandler(OnOptionNext_Duo1, "OnOptionNext_Duo1")
+	common.RegisterReactionHandler(OnOptionPrev_Duo1, "OnOptionPrev_Duo1")
+	common.RegisterEventHandler(AOPanelStart_Duo1, "AOPANEL_START")
+	common.RegisterEventHandler(AOPanelLMB_Duo1, "AOPANEL_BUTTON_LEFT_CLICK")
+	common.RegisterReactionHandler(OnCheckBoxClick_Duo1, "mouse_left_click_Duo1")
+	common.RegisterReactionHandler(PanelkaDNDOnPointing_Duo1, "PanelkaDNDOnPointing_Duo1")
+	common.RegisterEventHandler(eventSecondTimer_Duo1, "EVENT_SECOND_TIMER")
 end
 
-common.RegisterEventHandler(Init, "EVENT_AVATAR_CREATED")
+common.RegisterEventHandler(Init_Duo1, "EVENT_AVATAR_CREATED")
 
 if avatar.IsExist() then
-	Init()
+	Init_Duo1()
 end

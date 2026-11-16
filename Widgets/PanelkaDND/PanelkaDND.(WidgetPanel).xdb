@@ -23,5 +23,5 @@
             <Size>28</Size>
         </Y>
     </Placement>
-	<reactionOnPointing>PanelkaDNDOnPointing</reactionOnPointing>
+	<reactionOnPointing>PanelkaDNDOnPointing_Duo1</reactionOnPointing>
 </WidgetPanel>

@@ -23,7 +23,7 @@
 			</StateNormal>
 			<PushedOffset x="0" y="0" />
 			<ReactionOnUp>true</ReactionOnUp>
-			<Reaction>AcceptChanges</Reaction>
+			<Reaction>AcceptChanges_Duo1</Reaction>
 		</Item>
 	</Variants>
 </WidgetButton>

@@ -19,7 +19,7 @@
 			<TextFileRef href="" />
 			<LayerHighlight href="Textures/Highlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
 			<PushedOffset x="0" y="0" />
-			<Reaction>OnSelectMode</Reaction>
+			<Reaction>OnSelectMode_Duo1</Reaction>
 		</Item>
 	</Variants>
 </WidgetButton>

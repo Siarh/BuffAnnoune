@@ -24,7 +24,7 @@
 				<LayerMain href="Textures/CheckBoxStoneChecked.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
 			</StatePushed>
 			<ReactionOnUp>true</ReactionOnUp>
-			<Reaction>OnOptionCheckBox</Reaction>
+			<Reaction>OnOptionCheckBox_Duo1</Reaction>
 		</Item>
 		<Item>
 			<LayerHighlight href="Textures/CheckBoxStoneHighlight.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
@@ -32,7 +32,7 @@
 				<LayerMain href="Textures/CheckBoxStoneChecked.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
 			</StateNormal>      
 			<ReactionOnUp>true</ReactionOnUp>
-			<Reaction>OnOptionCheckBox</Reaction>
+			<Reaction>OnOptionCheckBox_Duo1</Reaction>
 		</Item>
 	</Variants>
 </WidgetButton>

@@ -20,7 +20,7 @@
 			<TextFileRef href="" />
 			<LayerHighlight href="Textures/Highlight.(WidgetLayerTiledTexture).xdb#xpointer(/WidgetLayerTiledTexture)" />
 			<PushedOffset x="0" y="0" />
-			<Reaction>SelectTarget</Reaction>
+			<Reaction>SelectTarget_Duo1</Reaction>
 		</Item>
 	</Variants>
 	<Enabled>false</Enabled>

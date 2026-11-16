@@ -23,7 +23,7 @@
 			<StatePushed>
 				<LayerMain href="Textures/ContainerItemNormal.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
 			</StatePushed>
-			<Reaction>SelectVarOfTarget</Reaction>
+			<Reaction>SelectVarOfTarget_Duo1</Reaction>
 		</Item>
 		<Item>
 			<LayerHighlight href="Textures/ContainerItemHighlight.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
@@ -33,7 +33,7 @@
 			<StatePushed>
 				<LayerMain href="Textures/ContainerItemSelected.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
 			</StatePushed>
-			<Reaction>SelectVarOfTarget</Reaction>
+			<Reaction>SelectVarOfTarget_Duo1</Reaction>
 		</Item>
 	</Variants>
 </WidgetButton>

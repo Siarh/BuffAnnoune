@@ -26,7 +26,7 @@
 				<LayerMain href="SPressed.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
 			</StatePushed>
 			<ReactionOnUp>true</ReactionOnUp>
-			<Reaction>SBtnReaction</Reaction>
+			<Reaction>SBtnReaction_Duo1</Reaction>
 		</Item>
 	</Variants>
 </WidgetButton>

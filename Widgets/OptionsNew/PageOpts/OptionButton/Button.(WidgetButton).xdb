@@ -25,7 +25,7 @@
 			<StatePushed>
 				<LayerMain href="Textures/Highlight.(WidgetLayerSimpleTexture).xdb#xpointer(/WidgetLayerSimpleTexture)" />
 			</StatePushed>
-			<Reaction>OnOptionButton</Reaction>
+			<Reaction>OnOptionButton_Duo1</Reaction>
 		</Item>
 	</Variants>
 </WidgetButton>

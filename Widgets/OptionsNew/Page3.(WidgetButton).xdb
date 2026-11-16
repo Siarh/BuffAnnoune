@@ -26,7 +26,7 @@
 			</StateNormal>
 			<PushedOffset x="0" y="0" />
 			<ReactionOnUp>true</ReactionOnUp>
-			<Reaction>select_page</Reaction>
+			<Reaction>select_page_Duo1</Reaction>
 		</Item>
 	</Variants>
 </WidgetButton>
