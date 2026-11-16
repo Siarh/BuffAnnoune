@@ -3150,6 +3150,7 @@ function OnReactionShowHideBtnReaction()
 	end
 
 	ClosePanelka()
+	userMods.SendEvent("BUFFANNOUNCE_DUO_VISIBILITY", { show = var_0_24.show_panel })
 end
 
 function ClosePanelka()
@@ -3179,8 +3180,8 @@ function AOPanelStart(arg_119_0)
 	}
 
 	userMods.SendEvent("AOPANEL_SEND_ADDON", {
-		name = "BuffAnnounce2",
-		sysName = "BuffAnnounce2",
+		name = "BuffAnnounceDuo",
+		sysName = "BuffAnnounceDuo",
 		param = var_119_2
 	})
 	ShowHideBtn:Show(false)
@@ -3196,7 +3197,7 @@ function AOPanelStart(arg_119_0)
 end
 
 function AOPanelLMB(arg_120_0)
-	if arg_120_0.sender == "BuffAnnounce2" then
+	if arg_120_0.sender == "BuffAnnounceDuo" then
 		OnReactionShowHideBtnReaction()
 	end
 end

@@ -8,7 +8,7 @@
 		</Item>
 	</Forms>
 	<MainFormId>Main</MainFormId>
-	<Name>ao-Sunshine.BuffAnnounce</Name>
+	<Name>ao-Sunshine.BuffAnnounceDuo</Name>
 	<localizedNameFileRef href="name.txt"/>
 	<localizedDescFileRef href="desc.txt"/>
 	<ScriptFileRefs>
@@ -17,6 +17,7 @@
 		<Item href="Scripts/LibDnD.lua"/>
 		<Item href="Scripts/LibGS.lua"/>
 		<Item href="Scripts/mainscript.lua"/>
+		<Item href="Scripts/mainscript2.lua"/>
 		<Item href="/Mods/SampleCommon/SampleAddonBase.lua"/>
 	</ScriptFileRefs>
 	<author>Slashuur | Fixed for ao-Sunshine</author>

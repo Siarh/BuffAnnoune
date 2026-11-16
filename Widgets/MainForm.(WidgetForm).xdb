@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <WidgetForm>
-	<Name>BuffAnnounce2</Name>
+	<Name>BuffAnnounceDuo</Name>
 	<Priority>5420</Priority>
 	<Children>
 		<Item href="BuffInternal.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
@@ -20,6 +20,7 @@
 		<Item href="AOPanel.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
 		<Item href="OptionsNew/OptionsNew.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
 		<Item href="OptionsNew/PageBuffs/ItemPanel/PageBuffsItem.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
+		<Item href="Second/MainForm2Root.(WidgetPanel).xdb#xpointer(/WidgetPanel)" />
 	</Children>
 	<BackLayer href="" />
 	<FrontLayer href="" />
