@@ -3148,7 +3148,6 @@ function OnReactionShowHideBtnReaction()
 	if DnD.IsDragging() then
 		return
 	end
-
 	ClosePanelka()
 	userMods.SendEvent("BUFFANNOUNCE_DUO_VISIBILITY", { show = var_0_24.show_panel })
 end

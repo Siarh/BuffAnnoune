@@ -686,7 +686,7 @@ function SelectVarOfTarget_Duo2(arg_2_0)
 	for iter_2_0, iter_2_1 in pairs(ContainerItems_Duo2) do
 		iter_2_1:SetVariant(0)
 
-		if iter_2_1:IsEqual(arg_2_0.widget_Duo2) then
+		if iter_2_1:IsEqual(arg_2_0.widget) then
 			iter_2_1:SetVariant(1)
 
 			var_0_24.current_target = iter_2_0
@@ -1901,12 +1901,12 @@ function PanelkaDNDOnPointing_Duo2(arg_38_0)
 end
 
 function OnPanelkaCheckbox_Duo2(arg_39_0)
-	if arg_39_0.widget_Duo2:GetVariant() == 0 then
-		arg_39_0.widget_Duo2:SetVariant(1)
+	if arg_39_0.widget:GetVariant() == 0 then
+		arg_39_0.widget:SetVariant(1)
 
 		var_0_24.disable_buffs = false
 	else
-		arg_39_0.widget_Duo2:SetVariant(0)
+		arg_39_0.widget:SetVariant(0)
 
 		var_0_24.disable_buffs = true
 	end
@@ -2028,15 +2028,15 @@ end
 function OnPageBuffsCheckBoxClick_Duo2(arg_44_0)
 	local var_44_0 = true
 
-	if arg_44_0.widget_Duo2:GetVariant() == 0 then
-		arg_44_0.widget_Duo2:SetVariant(1)
+	if arg_44_0.widget:GetVariant() == 0 then
+		arg_44_0.widget:SetVariant(1)
 	else
-		arg_44_0.widget_Duo2:SetVariant(0)
+		arg_44_0.widget:SetVariant(0)
 
 		var_44_0 = false
 	end
 
-	local var_44_1 = arg_44_0.widget_Duo2:GetParent()
+	local var_44_1 = arg_44_0.widget:GetParent()
 	local var_44_2 = tonumber(string.sub(var_44_1:GetName(), 7))
 
 	if arg_44_0.sender == "CBUnit" then
@@ -2045,7 +2045,7 @@ function OnPageBuffsCheckBoxClick_Duo2(arg_44_0)
 		var_0_28[var_44_2].onMobs = var_44_0
 	end
 
-	arg_44_0.widget_Duo2:SetFocus(true)
+	arg_44_0.widget:SetFocus(true)
 end
 
 function RepaintContainer_Duo2()
@@ -2099,7 +2099,7 @@ function RepaintContainer_Duo2()
 end
 
 function ButtonEditClick_Duo2(arg_46_0)
-	local var_46_0 = arg_46_0.widget_Duo2:GetParent()
+	local var_46_0 = arg_46_0.widget:GetParent()
 	local var_46_1 = tonumber(string.sub(var_46_0:GetName(), 7))
 
 	for iter_46_0, iter_46_1 in pairs(PageBuffsItems_Duo2) do
@@ -2118,11 +2118,11 @@ function ButtonEditClick_Duo2(arg_46_0)
 end
 
 function RenameCancelReaction_Duo2(arg_47_0)
-	local var_47_0 = arg_47_0.widget_Duo2:GetParent()
+	local var_47_0 = arg_47_0.widget:GetParent()
 	local var_47_1 = tonumber(string.sub(var_47_0:GetName(), 7))
 
-	arg_47_0.widget_Duo2:Show(false)
-	arg_47_0.widget_Duo2:Enable(false)
+	arg_47_0.widget:Show(false)
+	arg_47_0.widget:Enable(false)
 
 	if var_0_28 and var_0_28[var_47_1] then
 		local var_47_2 = var_0_28[var_47_1].name
@@ -2133,13 +2133,13 @@ function RenameCancelReaction_Duo2(arg_47_0)
 end
 
 function RenameBuildReaction_Duo2(arg_48_0)
-	local var_48_0 = arg_48_0.widget_Duo2:GetParent()
+	local var_48_0 = arg_48_0.widget:GetParent()
 	local var_48_1 = tonumber(string.sub(var_48_0:GetName(), 7))
 
-	arg_48_0.widget_Duo2:Show(false)
-	arg_48_0.widget_Duo2:Enable(false)
+	arg_48_0.widget:Show(false)
+	arg_48_0.widget:Enable(false)
 
-	local var_48_2 = arg_48_0.widget_Duo2:GetText()
+	local var_48_2 = arg_48_0.widget:GetText()
 	local var_48_3 = userMods.FromWString(var_48_2)
 
 	for iter_48_0, iter_48_1 in pairs(var_0_28) do
@@ -2161,14 +2161,14 @@ function RenameBuildReaction_Duo2(arg_48_0)
 end
 
 function RenameFocusChanged_Duo2(arg_49_0)
-	if arg_49_0.widget_Duo2:IsFocused() ~= true then
+	if arg_49_0.widget:IsFocused() ~= true then
 		RenameBuildReaction_Duo2(arg_49_0)
 	end
 end
 
 function ButtonDeleteClick_Duo2(arg_50_0)
 	local var_50_0 = PageBuffsContainer_Duo2:GetContainerOffset()
-	local var_50_1 = arg_50_0.widget_Duo2:GetParent()
+	local var_50_1 = arg_50_0.widget:GetParent()
 	local var_50_2 = tonumber(string.sub(var_50_1:GetName(), 7))
 
 	if var_50_2 < GetTableSize_Duo2(var_0_28) then
@@ -2377,7 +2377,7 @@ function OnMBtnReaction_Duo2(arg_57_0)
 end
 
 function OnSelectMode_Duo2(arg_58_0)
-	local var_58_0 = tonumber(string.sub(arg_58_0.widget_Duo2:GetName(), 7))
+	local var_58_0 = tonumber(string.sub(arg_58_0.widget:GetName(), 7))
 
 	UnregisterAndClear_Duo2()
 	var_0_1:Show(false)
@@ -2394,47 +2394,47 @@ end
 
 function SetOptionWidget_Duo2(arg_59_0)
 	if arg_59_0.type == "label" then
-		arg_59_0.widget_Duo2:GetChildChecked("Text", false):SetVal("text", userMods.ToWString(arg_59_0.text))
+		arg_59_0.widget:GetChildChecked("Text", false):SetVal("text", userMods.ToWString(arg_59_0.text))
 	elseif arg_59_0.type == "checkbox" then
-		arg_59_0.widget_Duo2:GetChildChecked("Text", false):SetVal("text", userMods.ToWString(arg_59_0.text))
+		arg_59_0.widget:GetChildChecked("Text", false):SetVal("text", userMods.ToWString(arg_59_0.text))
 
 		if var_0_24[arg_59_0.param1] == true then
-			arg_59_0.widget_Duo2:GetChildChecked("CheckBoxButton", false):SetVariant(1)
+			arg_59_0.widget:GetChildChecked("CheckBoxButton", false):SetVariant(1)
 		else
-			arg_59_0.widget_Duo2:GetChildChecked("CheckBoxButton", false):SetVariant(0)
+			arg_59_0.widget:GetChildChecked("CheckBoxButton", false):SetVariant(0)
 		end
 	elseif arg_59_0.type == "selector" then
-		arg_59_0.widget_Duo2:GetChildChecked("Text", false):SetVal("text", userMods.ToWString(arg_59_0.text))
+		arg_59_0.widget:GetChildChecked("Text", false):SetVal("text", userMods.ToWString(arg_59_0.text))
 
 		if not arg_59_0.param2 then
-			arg_59_0.widget_Duo2:GetChildChecked("Counter", false):SetVal("text", common.FormatInt(var_0_24[arg_59_0.param1], "%d"))
+			arg_59_0.widget:GetChildChecked("Counter", false):SetVal("text", common.FormatInt(var_0_24[arg_59_0.param1], "%d"))
 		else
-			arg_59_0.widget_Duo2:GetChildChecked("Counter", false):SetVal("text", common.FormatInt(var_0_24[arg_59_0.param1][arg_59_0.param2], "%d"))
+			arg_59_0.widget:GetChildChecked("Counter", false):SetVal("text", common.FormatInt(var_0_24[arg_59_0.param1][arg_59_0.param2], "%d"))
 		end
 	elseif arg_59_0.type == "button" then
-		arg_59_0.widget_Duo2:GetChildChecked("Button", false):GetChildChecked("Text", false):SetVal("text", userMods.ToWString(arg_59_0.text))
+		arg_59_0.widget:GetChildChecked("Button", false):GetChildChecked("Text", false):SetVal("text", userMods.ToWString(arg_59_0.text))
 	end
 end
 
 function AddOptionLabel_Duo2(arg_60_0)
 	OptionBase_Duo2[arg_60_0.name] = {}
-	OptionBase_Duo2[arg_60_0.name].widget_Duo2 = mainForm:CreateWidgetByDesc(OptionLabelDesc_Duo2)
+	OptionBase_Duo2[arg_60_0.name].widget = mainForm:CreateWidgetByDesc(OptionLabelDesc_Duo2)
 
-	OptionBase_Duo2[arg_60_0.name].widget_Duo2:SetName(arg_60_0.name)
+	OptionBase_Duo2[arg_60_0.name].widget:SetName(arg_60_0.name)
 
 	OptionBase_Duo2[arg_60_0.name].text = arg_60_0.text
 	OptionBase_Duo2[arg_60_0.name].type = "label"
 
 	SetOptionWidget_Duo2(OptionBase_Duo2[arg_60_0.name])
-	OptionBase_Duo2[arg_60_0.name].widget_Duo2:Show(true)
-	PageOptsContainer_Duo2:PushBack(OptionBase_Duo2[arg_60_0.name].widget_Duo2)
+	OptionBase_Duo2[arg_60_0.name].widget:Show(true)
+	PageOptsContainer_Duo2:PushBack(OptionBase_Duo2[arg_60_0.name].widget)
 end
 
 function AddOptionCheckBox_Duo2(arg_61_0)
 	OptionBase_Duo2[arg_61_0.name] = {}
-	OptionBase_Duo2[arg_61_0.name].widget_Duo2 = mainForm:CreateWidgetByDesc(OptionCheckBoxDesc_Duo2)
+	OptionBase_Duo2[arg_61_0.name].widget = mainForm:CreateWidgetByDesc(OptionCheckBoxDesc_Duo2)
 
-	OptionBase_Duo2[arg_61_0.name].widget_Duo2:SetName(arg_61_0.name)
+	OptionBase_Duo2[arg_61_0.name].widget:SetName(arg_61_0.name)
 
 	OptionBase_Duo2[arg_61_0.name].text = arg_61_0.text
 	OptionBase_Duo2[arg_61_0.name].func = arg_61_0.func
@@ -2442,15 +2442,15 @@ function AddOptionCheckBox_Duo2(arg_61_0)
 	OptionBase_Duo2[arg_61_0.name].type = "checkbox"
 
 	SetOptionWidget_Duo2(OptionBase_Duo2[arg_61_0.name])
-	OptionBase_Duo2[arg_61_0.name].widget_Duo2:Show(true)
-	PageOptsContainer_Duo2:PushBack(OptionBase_Duo2[arg_61_0.name].widget_Duo2)
+	OptionBase_Duo2[arg_61_0.name].widget:Show(true)
+	PageOptsContainer_Duo2:PushBack(OptionBase_Duo2[arg_61_0.name].widget)
 end
 
 function AddOptionSelector_Duo2(arg_62_0)
 	OptionBase_Duo2[arg_62_0.name] = {}
-	OptionBase_Duo2[arg_62_0.name].widget_Duo2 = mainForm:CreateWidgetByDesc(OptionSelectorDesc_Duo2)
+	OptionBase_Duo2[arg_62_0.name].widget = mainForm:CreateWidgetByDesc(OptionSelectorDesc_Duo2)
 
-	OptionBase_Duo2[arg_62_0.name].widget_Duo2:SetName(arg_62_0.name)
+	OptionBase_Duo2[arg_62_0.name].widget:SetName(arg_62_0.name)
 
 	OptionBase_Duo2[arg_62_0.name].text = arg_62_0.text
 	OptionBase_Duo2[arg_62_0.name].func = arg_62_0.func
@@ -2462,23 +2462,23 @@ function AddOptionSelector_Duo2(arg_62_0)
 	OptionBase_Duo2[arg_62_0.name].type = "selector"
 
 	SetOptionWidget_Duo2(OptionBase_Duo2[arg_62_0.name])
-	OptionBase_Duo2[arg_62_0.name].widget_Duo2:Show(true)
-	PageOptsContainer_Duo2:PushBack(OptionBase_Duo2[arg_62_0.name].widget_Duo2)
+	OptionBase_Duo2[arg_62_0.name].widget:Show(true)
+	PageOptsContainer_Duo2:PushBack(OptionBase_Duo2[arg_62_0.name].widget)
 end
 
 function AddOptionButton_Duo2(arg_63_0)
 	OptionBase_Duo2[arg_63_0.name] = {}
-	OptionBase_Duo2[arg_63_0.name].widget_Duo2 = mainForm:CreateWidgetByDesc(OptionButtonDesc_Duo2)
+	OptionBase_Duo2[arg_63_0.name].widget = mainForm:CreateWidgetByDesc(OptionButtonDesc_Duo2)
 
-	OptionBase_Duo2[arg_63_0.name].widget_Duo2:SetName(arg_63_0.name)
+	OptionBase_Duo2[arg_63_0.name].widget:SetName(arg_63_0.name)
 
 	OptionBase_Duo2[arg_63_0.name].text = arg_63_0.text
 	OptionBase_Duo2[arg_63_0.name].func = arg_63_0.func
 	OptionBase_Duo2[arg_63_0.name].type = "button"
 
 	SetOptionWidget_Duo2(OptionBase_Duo2[arg_63_0.name])
-	OptionBase_Duo2[arg_63_0.name].widget_Duo2:Show(true)
-	PageOptsContainer_Duo2:PushBack(OptionBase_Duo2[arg_63_0.name].widget_Duo2)
+	OptionBase_Duo2[arg_63_0.name].widget:Show(true)
+	PageOptsContainer_Duo2:PushBack(OptionBase_Duo2[arg_63_0.name].widget)
 end
 
 function PrepareOptions_Duo2()
@@ -3053,15 +3053,15 @@ function ShowGearChanged_Duo2()
 end
 
 function OnCheckBoxClick_Duo2(arg_112_0)
-	if arg_112_0.widget_Duo2:GetVariant() == 0 then
-		arg_112_0.widget_Duo2:SetVariant(1)
+	if arg_112_0.widget:GetVariant() == 0 then
+		arg_112_0.widget:SetVariant(1)
 	else
-		arg_112_0.widget_Duo2:SetVariant(0)
+		arg_112_0.widget:SetVariant(0)
 	end
 end
 
 function OnOptionButton_Duo2(arg_113_0)
-	local var_113_0 = arg_113_0.widget_Duo2:GetParent():GetName()
+	local var_113_0 = arg_113_0.widget:GetParent():GetName()
 
 	if OptionBase_Duo2[var_113_0] and OptionBase_Duo2[var_113_0].func then
 		OptionBase_Duo2[var_113_0].func()
@@ -3069,7 +3069,7 @@ function OnOptionButton_Duo2(arg_113_0)
 end
 
 function OnOptionCheckBox_Duo2(arg_114_0)
-	local var_114_0 = arg_114_0.widget_Duo2:GetParent():GetName()
+	local var_114_0 = arg_114_0.widget:GetParent():GetName()
 
 	if OptionBase_Duo2[var_114_0] then
 		if var_0_24[OptionBase_Duo2[var_114_0].param1] == true then
@@ -3087,7 +3087,7 @@ function OnOptionCheckBox_Duo2(arg_114_0)
 end
 
 function OnOptionNext_Duo2(arg_115_0)
-	local var_115_0 = arg_115_0.widget_Duo2:GetParent():GetName()
+	local var_115_0 = arg_115_0.widget:GetParent():GetName()
 
 	if OptionBase_Duo2[var_115_0] then
 		if not OptionBase_Duo2[var_115_0].param2 then
@@ -3123,7 +3123,7 @@ function OnOptionNext_Duo2(arg_115_0)
 end
 
 function OnOptionPrev_Duo2(arg_116_0)
-	local var_116_0 = arg_116_0.widget_Duo2:GetParent():GetName()
+	local var_116_0 = arg_116_0.widget:GetParent():GetName()
 
 	if OptionBase_Duo2[var_116_0] then
 		if not OptionBase_Duo2[var_116_0].param2 then
@@ -3428,6 +3428,7 @@ end
 
 function Init_Duo2()
 	mainForm:Show(true)
+	ShowHideBtn_Duo2:Show(false)
 
 	if not var_0_24 then
 		var_0_24 = {}
@@ -3469,8 +3470,8 @@ function Init_Duo2()
 		PanelkaDND_Duo2:GetChildChecked("Checkbox", false):SetVariant(1)
 	end
 
-	if GS.Init_Duo2 then
-		GS.Init_Duo2()
+	if GS.Init then
+		GS.Init()
 	end
 
 	GS.EnableTargetInspection(false)
@@ -3590,9 +3591,9 @@ function Init_Duo2()
 
 	var_0_7 = false
 
-	DnD.Init_Duo2(MainPanel_Duo2, PanelkaDND_Duo2, true)
-	DnD.Init_Duo2(OptionsNew_Duo2, Header_Duo2, true)
-	DnD.Init_Duo2(ShowHideBtn_Duo2, nil, true)
+	DnD.Init(MainPanel_Duo2, PanelkaDND_Duo2, true)
+	DnD.Init(OptionsNew_Duo2, Header_Duo2, true)
+	DnD.Init(ShowHideBtn_Duo2, nil, true)
 
 	var_0_31 = Target_Duo2:GetPlacementPlain()
 	var_0_32 = Target_Duo2:GetPlacementPlain()
